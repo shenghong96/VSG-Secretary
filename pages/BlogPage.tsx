@@ -10,21 +10,17 @@ type BlogPostSkeleton = contentful.EntrySkeletonType<{
     title: contentful.EntryFieldTypes.Text;
     slug: contentful.EntryFieldTypes.Text; // Added slug for unique URLs
     description: contentful.EntryFieldTypes.Text;
+    category?: contentful.EntryFieldTypes.Text; // Added category for filtering
     featuredImage?: contentful.EntryFieldTypes.AssetLink;
 }>;
 
-const categories = ["Corporate Governance", "Compliance", "Industry News", "Company Updates"];
-const recentPosts = [
-    { title: "The Future of Corporate Governance in 2024", date: "January 15, 2024", link: "#" },
-    { title: "Navigating Compliance Challenges in a Remote World", date: "January 10, 2024", link: "#" },
-    { title: "5 Key Updates from the Latest SSM Announcements", date: "January 5, 2024", link: "#" }
-];
-
 const BlogPage: React.FC = () => {
     const [articles, setArticles] = useState<any[]>([]);
+    const [filteredArticles, setFilteredArticles] = useState<any[]>([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
     const [currentPage, setCurrentPage] = useState(1);
+    const [searchQuery, setSearchQuery] = useState('');
     const ARTICLES_PER_PAGE = 4;
 
     useEffect(() => {
@@ -48,10 +44,13 @@ const BlogPage: React.FC = () => {
                         title: item.fields.title,
                         slug: item.fields.slug, // Map the slug field
                         description: item.fields.description,
+                        category: item.fields.category || 'General', // Default category
+                        date: new Date(item.sys.createdAt).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }),
                         imageUrl: imageUrl,
                     };
                 });
                 setArticles(formattedArticles);
+                setFilteredArticles(formattedArticles);
             } catch (err) {
                 console.error("Failed to fetch articles from Contentful:", err);
                 setError("Could not load blog posts. Please ensure your Contentful credentials are correct and that your 'pageBlogPost' content type includes a 'slug' field.");
@@ -62,11 +61,27 @@ const BlogPage: React.FC = () => {
         fetchArticles();
     }, []);
 
+    // Filter articles when search query changes
+    useEffect(() => {
+        const query = searchQuery.toLowerCase();
+        const results = articles.filter(article =>
+            (article.title?.toLowerCase() || '').includes(query) ||
+            (article.description?.toLowerCase() || '').includes(query) ||
+            (article.category?.toLowerCase() || '').includes(query)
+        );
+        setFilteredArticles(results);
+        setCurrentPage(1); // Reset to first page on search
+    }, [searchQuery, articles]);
+
+    // Derive Dynamic Data
+    const uniqueCategories = Array.from(new Set(articles.map(a => a.category))).sort();
+    const recentPosts = articles.slice(0, 3); // Get top 3 most recent posts
+
     // Pagination Logic
     const indexOfLastArticle = currentPage * ARTICLES_PER_PAGE;
     const indexOfFirstArticle = indexOfLastArticle - ARTICLES_PER_PAGE;
-    const currentArticles = articles.slice(indexOfFirstArticle, indexOfLastArticle);
-    const totalPages = Math.ceil(articles.length / ARTICLES_PER_PAGE);
+    const currentArticles = filteredArticles.slice(indexOfFirstArticle, indexOfLastArticle);
+    const totalPages = Math.ceil(filteredArticles.length / ARTICLES_PER_PAGE);
 
     const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
     const goToPrevPage = () => setCurrentPage(prev => Math.max(prev - 1, 1));
@@ -96,6 +111,8 @@ const BlogPage: React.FC = () => {
                                     <input
                                         className="block w-full rounded-2xl border-slate-200 bg-white py-4 pl-12 pr-4 text-slate-900 placeholder:text-slate-400 focus:border-primary focus:ring-primary shadow-sm dark:border-slate-800 dark:bg-slate-900 dark:text-white"
                                         placeholder="Search articles..."
+                                        value={searchQuery}
+                                        onChange={(e) => setSearchQuery(e.target.value)}
                                     />
                                 </label>
                             </div>
@@ -123,7 +140,7 @@ const BlogPage: React.FC = () => {
                                             </Link>
                                             <div className="flex-1 py-2">
                                                 <div className="flex items-center gap-3 mb-3 text-xs font-bold uppercase tracking-wider text-primary">
-                                                    <span>News</span>
+                                                    <span>{article.category}</span>
                                                     <span className="size-1 rounded-full bg-slate-300"></span>
                                                     <span className="text-slate-500">5 min read</span>
                                                 </div>
@@ -138,13 +155,13 @@ const BlogPage: React.FC = () => {
                                         </article>
                                     )) : (
                                         <div className="sm:col-span-2 text-center py-16">
-                                            <p className="text-text-secondary-light dark:text-text-secondary-dark">No articles found.</p>
+                                            <p className="text-text-secondary-light dark:text-text-secondary-dark">No articles found matching your search.</p>
                                         </div>
                                     )}
                                 </div>
 
                                 {/* Pagination Controls */}
-                                {articles.length > ARTICLES_PER_PAGE && (
+                                {filteredArticles.length > ARTICLES_PER_PAGE && (
                                     <div className="mt-12 flex items-center justify-center gap-2">
                                         <button
                                             onClick={goToPrevPage}
@@ -184,12 +201,12 @@ const BlogPage: React.FC = () => {
                         <div className="bg-white dark:bg-slate-900 p-8 rounded-3xl shadow-lg ring-1 ring-slate-200 dark:ring-slate-800">
                             <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-6 uppercase tracking-wider">Categories</h3>
                             <ul className="space-y-3">
-                                {categories.map((cat, i) => (
+                                {uniqueCategories.map((cat: any, i) => (
                                     <li key={i}>
-                                        <Link to="#" className="flex items-center justify-between group p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
+                                        <button onClick={() => setSearchQuery(cat)} className="w-full flex items-center justify-between group p-2 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
                                             <span className="text-slate-600 dark:text-slate-300 font-medium group-hover:text-primary transition-colors">{cat}</span>
                                             <span className="material-symbols-outlined text-slate-400 group-hover:translate-x-1 transition-transform">chevron_right</span>
-                                        </Link>
+                                        </button>
                                     </li>
                                 ))}
                             </ul>
@@ -197,9 +214,9 @@ const BlogPage: React.FC = () => {
                         <div className="bg-white dark:bg-slate-900 p-8 rounded-3xl shadow-lg ring-1 ring-slate-200 dark:ring-slate-800">
                             <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-6 uppercase tracking-wider">Recent Posts</h3>
                             <ul className="space-y-6">
-                                {recentPosts.map((post, i) => (
+                                {recentPosts.map((post: any, i) => (
                                     <li key={i} className="group">
-                                        <Link to={post.link} className="block font-bold text-slate-900 dark:text-white leading-snug group-hover:text-primary transition-colors">{post.title}</Link>
+                                        <Link to={`/blog/${post.slug}`} className="block font-bold text-slate-900 dark:text-white leading-snug group-hover:text-primary transition-colors">{post.title}</Link>
                                         <p className="text-xs text-slate-500 mt-2 font-medium">{post.date}</p>
                                     </li>
                                 ))}
