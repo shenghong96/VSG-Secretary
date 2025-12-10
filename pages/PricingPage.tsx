@@ -184,14 +184,14 @@ const PricingPage: React.FC = () => {
                                 <ul className="grid grid-cols-1 md:grid-cols-2 gap-y-4 gap-x-8">
                                     <li className="flex items-start gap-3 text-slate-600 dark:text-slate-300"><span className="material-symbols-outlined text-primary mt-0.5">check_circle</span>Company Name Registration</li>
                                     <li className="flex items-start gap-3 text-slate-600 dark:text-slate-300"><span className="material-symbols-outlined text-primary mt-0.5">check_circle</span>SSM Filing Fees Included</li>
-                                    <li className="flex items-start gap-3 text-slate-600 dark:text-slate-300"><span className="material-symbols-outlined text-primary mt-0.5">check_circle</span>Bank Resolution + CTC</li>
+                                    <li className="flex items-start gap-3 text-slate-600 dark:text-slate-300"><span className="material-symbols-outlined text-primary mt-0.5">check_circle</span>1 set Bank Account Opening Resolution</li>
                                     <li className="flex items-start gap-3 text-slate-600 dark:text-slate-300"><span className="material-symbols-outlined text-primary mt-0.5">check_circle</span>First Board Resolution</li>
                                     <li className="flex items-start gap-3 text-slate-600 dark:text-slate-300"><span className="material-symbols-outlined text-primary mt-0.5">check_circle</span>24/7 Access to Client Portal</li>
                                 </ul>
                                 <div className="mt-10">
-                                    <a href="https://incorp.vsgsecretary.com" target="_blank" rel="noopener noreferrer" className="inline-flex w-full md:w-auto items-center justify-center rounded-xl bg-primary px-8 py-4 text-base font-bold text-white shadow-lg shadow-primary/30 transition-all hover:scale-105 hover:bg-primary-hover hover:shadow-glow">
+                                    <Link to="/incorporation" className="inline-flex w-full md:w-auto items-center justify-center rounded-xl bg-primary px-8 py-4 text-base font-bold text-white shadow-lg shadow-primary/30 transition-all hover:scale-105 hover:bg-primary-hover hover:shadow-glow">
                                         Incorporate Now
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -210,11 +210,13 @@ const PricingPage: React.FC = () => {
                             <ul className="space-y-4 flex-grow mb-8">
                                 <li className="flex items-center gap-3 text-slate-600 dark:text-slate-300"><span className="material-symbols-outlined text-primary">check</span>Registered Office Address</li>
                                 <li className="flex items-center gap-3 text-slate-600 dark:text-slate-300"><span className="material-symbols-outlined text-primary">check</span>Licensed Company Secretary</li>
+                                <li className="flex items-center gap-3 text-slate-600 dark:text-slate-300"><span className="material-symbols-outlined text-primary">check</span>Basic Compliance Alerts</li>
+                                <li className="flex items-center gap-3 text-slate-600 dark:text-slate-300"><span className="material-symbols-outlined text-primary">check</span>Document Storage Portal</li>
                                 <li className="flex items-start gap-3 text-slate-600 dark:text-slate-300"><span className="material-symbols-outlined text-primary mt-0.5">check</span>Secure Digital Identity & Signature</li>
                             </ul>
-                            <a href="https://incorp.vsgsecretary.com" target="_blank" rel="noopener noreferrer" className="mt-auto flex w-full items-center justify-center rounded-xl bg-slate-100 py-4 text-base font-bold text-slate-900 transition-colors hover:bg-slate-200 dark:bg-slate-800 dark:text-white dark:hover:bg-slate-700">
+                            <Link to="/incorporation" className="mt-auto flex w-full items-center justify-center rounded-xl bg-slate-100 py-4 text-base font-bold text-slate-900 transition-colors hover:bg-slate-200 dark:bg-slate-800 dark:text-white dark:hover:bg-slate-700">
                                 Select Basic Plan
-                            </a>
+                            </Link>
                         </div>
 
                         {/* Annual Plan (Best Value) */}
@@ -228,10 +230,11 @@ const PricingPage: React.FC = () => {
                                 <li className="flex items-center gap-3 text-slate-600 dark:text-slate-300"><span className="material-symbols-outlined text-primary">check</span>Annual General Meeting (AGM) Preparation</li>
                                 <li className="flex items-start gap-3 text-slate-600 dark:text-slate-300"><span className="material-symbols-outlined text-primary mt-0.5">check</span>Annual Filing with SSM (Annual Return, AFS, BO)</li>
                                 <li className="flex items-center gap-3 font-bold text-slate-900 dark:text-white"><span className="material-symbols-outlined text-primary">check</span>Priority Compliance Support</li>
+                                <li className="flex items-center gap-3 font-bold text-slate-900 dark:text-white"><span className="material-symbols-outlined text-primary">check</span>Priority Support Response</li>
                             </ul>
-                            <a href="https://incorp.vsgsecretary.com" target="_blank" rel="noopener noreferrer" className="mt-auto flex w-full items-center justify-center rounded-xl bg-primary py-4 text-base font-bold text-white shadow-lg shadow-primary/30 transition-colors hover:bg-primary-hover hover:shadow-glow">
+                            <Link to="/incorporation" className="mt-auto flex w-full items-center justify-center rounded-xl bg-primary py-4 text-base font-bold text-white shadow-lg shadow-primary/30 transition-colors hover:bg-primary-hover hover:shadow-glow">
                                 Choose Annual Plan
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>

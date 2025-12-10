@@ -1,6 +1,6 @@
 
 import React, { useState, useRef, useEffect } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 const navLinks = [
   { name: 'Home', path: '/home' },
@@ -98,9 +98,9 @@ const Header = ({ logoUrl }: { logoUrl: string | null }) => {
               </div>
             )}
           </div>
-          <a href="https://incorp.vsgsecretary.com" target="_blank" rel="noopener noreferrer" className="hidden min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-6 bg-primary text-white text-sm font-bold leading-normal tracking-wide shadow-lg shadow-primary/25 transition-all hover:scale-105 hover:bg-primary-hover hover:shadow-primary/40 sm:flex">
+          <Link to="/incorporation" className="hidden min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-6 bg-primary text-white text-sm font-bold leading-normal tracking-wide shadow-lg shadow-primary/25 transition-all hover:scale-105 hover:bg-primary-hover hover:shadow-primary/40 sm:flex">
             <span className="truncate">Start Incorporation</span>
-          </a>
+          </Link>
           <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="p-2 md:hidden">
             <span className="material-symbols-outlined text-text-primary-light dark:text-text-primary-dark">{isMenuOpen ? 'close' : 'menu'}</span>
           </button>
@@ -122,9 +122,9 @@ const Header = ({ logoUrl }: { logoUrl: string | null }) => {
                 {link.name}
               </NavLink>
             ))}
-            <a href="https://incorp.vsgsecretary.com" target="_blank" rel="noopener noreferrer" className="mt-4 flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-slate-50 text-sm font-bold leading-normal tracking-[0.015em] transition-opacity hover:opacity-90">
+            <Link to="/incorporation" className="mt-4 flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-slate-50 text-sm font-bold leading-normal tracking-[0.015em] transition-opacity hover:opacity-90">
               <span className="truncate">Start Incorporation</span>
-            </a>
+            </Link>
           </nav>
         </div>
       )}

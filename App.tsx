@@ -14,6 +14,7 @@ import BlogPage from './pages/BlogPage';
 import BlogPostPage from './pages/BlogPostPage'; // Import the new component
 import FaqPage from './pages/FaqPage';
 import ContactPage from './pages/ContactPage';
+import IncorporationPage from './pages/IncorporationPage';
 
 
 const ScrollToTop = () => {
@@ -45,7 +46,7 @@ const App: React.FC = () => {
     }
     return 'light';
   });
-  
+
   const [logoUrl, setLogoUrl] = useState<string | null>(null);
 
   useEffect(() => {
@@ -59,7 +60,7 @@ const App: React.FC = () => {
         if (response.items.length > 0 && response.items[0].fields.file?.url) {
           setLogoUrl(`https:${response.items[0].fields.file.url}`);
         } else {
-            console.warn("Logo asset 'Logo - VSG Secretary [Red & Transparent]' not found in Contentful. Falling back to SVG.");
+          console.warn("Logo asset 'Logo - VSG Secretary [Red & Transparent]' not found in Contentful. Falling back to SVG.");
         }
       } catch (error) {
         console.error("Error fetching logo from Contentful:", error);
@@ -90,6 +91,7 @@ const App: React.FC = () => {
           <Route path="/pricing" element={<PricingPage />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/blog/:slug" element={<BlogPostPage />} /> {/* Add new route */}
+          <Route path="/incorporation" element={<IncorporationPage />} />
           <Route path="/faq" element={<FaqPage />} />
           <Route path="/contact" element={<ContactPage />} />
         </Route>
