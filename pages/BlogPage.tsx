@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import * as contentful from 'contentful';
 import contentfulClient from '../lib/contentfulClient';
 
@@ -15,6 +16,7 @@ type BlogPostSkeleton = contentful.EntrySkeletonType<{
 }>;
 
 const BlogPage: React.FC = () => {
+    const { t } = useTranslation(); // Added useTranslation hook
     const [articles, setArticles] = useState<any[]>([]);
     const [filteredArticles, setFilteredArticles] = useState<any[]>([]);
     const [loading, setLoading] = useState(true);
@@ -53,13 +55,13 @@ const BlogPage: React.FC = () => {
                 setFilteredArticles(formattedArticles);
             } catch (err) {
                 console.error("Failed to fetch articles from Contentful:", err);
-                setError("Could not load blog posts. Please ensure your Contentful credentials are correct and that your 'pageBlogPost' content type includes a 'slug' field.");
+                setError(t('blogPage.errorLoadingArticles')); // Use translation key
             } finally {
                 setLoading(false);
             }
         };
         fetchArticles();
-    }, []);
+    }, [t]); // Add t to dependency array
 
     // Filter articles when search query changes
     useEffect(() => {
@@ -93,12 +95,12 @@ const BlogPage: React.FC = () => {
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
                 <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
                     <div>
-                        <span className="text-primary font-bold tracking-wide uppercase text-sm">VSG Insights</span>
+                        <span className="text-primary font-bold tracking-wide uppercase text-sm">{t('blogPage.hero.badge')}</span>
                         <h1 className="mt-2 text-4xl md:text-5xl font-black tracking-tight text-slate-900 dark:text-white">
-                            Insights & <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary-hover">News</span>
+                            {t('blogPage.hero.title')} <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary-hover">{t('blogPage.hero.highlight')}</span>
                         </h1>
                     </div>
-                    <p className="text-lg text-slate-600 dark:text-slate-300 max-w-md leading-relaxed">Stay updated with the latest in corporate governance, compliance, and industry trends.</p>
+                    <p className="text-lg text-slate-600 dark:text-slate-300 max-w-md leading-relaxed">{t('blogPage.hero.subtitle')}</p>
                 </div>
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
                     <div className="lg:col-span-8">
@@ -110,7 +112,7 @@ const BlogPage: React.FC = () => {
                                     </span>
                                     <input
                                         className="block w-full rounded-2xl border-slate-200 bg-white py-4 pl-12 pr-4 text-slate-900 placeholder:text-slate-400 focus:border-primary focus:ring-primary shadow-sm dark:border-slate-800 dark:bg-slate-900 dark:text-white"
-                                        placeholder="Search articles..."
+                                        placeholder={t('blogPage.searchPlaceholder')} // Use translation key
                                         value={searchQuery}
                                         onChange={(e) => setSearchQuery(e.target.value)}
                                     />
@@ -120,7 +122,7 @@ const BlogPage: React.FC = () => {
 
                         {loading && (
                             <div className="flex justify-center items-center h-64">
-                                <p className="text-text-secondary-light dark:text-text-secondary-dark">Loading articles...</p>
+                                <p className="text-text-secondary-light dark:text-text-secondary-dark">{t('blogPage.loadingArticles')}</p>
                             </div>
                         )}
 
@@ -142,20 +144,20 @@ const BlogPage: React.FC = () => {
                                                 <div className="flex items-center gap-3 mb-3 text-xs font-bold uppercase tracking-wider text-primary">
                                                     <span>{article.category}</span>
                                                     <span className="size-1 rounded-full bg-slate-300"></span>
-                                                    <span className="text-slate-500">5 min read</span>
+                                                    <span className="text-slate-500">{t('blogPage.readTime', { minutes: 5 })}</span> {/* Use translation key */}
                                                 </div>
                                                 <Link to={`/blog/${article.slug}`} className="block">
                                                     <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-3 group-hover:text-primary transition-colors leading-tight">{article.title}</h2>
                                                 </Link>
                                                 <p className="text-slate-600 dark:text-slate-400 leading-relaxed mb-4 line-clamp-3">{article.description}</p>
                                                 <Link to={`/blog/${article.slug}`} className="inline-flex items-center gap-1 text-sm font-bold text-primary hover:underline">
-                                                    Read Article <span className="material-symbols-outlined text-base">arrow_forward</span>
+                                                    {t('blogPage.readArticle')} <span className="material-symbols-outlined text-base">arrow_forward</span> {/* Use translation key */}
                                                 </Link>
                                             </div>
                                         </article>
                                     )) : (
                                         <div className="sm:col-span-2 text-center py-16">
-                                            <p className="text-text-secondary-light dark:text-text-secondary-dark">No articles found matching your search.</p>
+                                            <p className="text-text-secondary-light dark:text-text-secondary-dark">{t('blogPage.noArticlesFound')}</p> {/* Use translation key */}
                                         </div>
                                     )}
                                 </div>
@@ -170,7 +172,7 @@ const BlogPage: React.FC = () => {
                                             className="inline-flex h-10 items-center justify-center gap-2 whitespace-nowrap rounded-lg px-4 text-sm font-medium tracking-wide text-text-secondary-light dark:text-text-secondary-dark transition duration-300 hover:bg-slate-200 dark:hover:bg-slate-800 focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50"
                                         >
                                             <span className="material-symbols-outlined">chevron_left</span>
-                                            <span>Prev</span>
+                                            <span>{t('blogPage.pagination.prev')}</span> {/* Use translation key */}
                                         </button>
                                         {Array.from({ length: totalPages }, (_, i) => i + 1).map(number => (
                                             <button

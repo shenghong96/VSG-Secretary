@@ -1,29 +1,36 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 import { NavLink, Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
-const navLinks = [
-  { name: 'Home', path: '/home' },
-  { name: 'Services', path: '/services' },
-  { name: 'Pricing', path: '/pricing' },
-  { name: 'About Us', path: '/about' },
-  { name: 'Blog', path: '/blog' },
-  { name: 'FAQ', path: '/faq' },
-  { name: 'Contact', path: '/contact' },
-];
+
 
 const Header = ({ logoUrl }: { logoUrl: string | null }) => {
+  const { t, i18n } = useTranslation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isLangMenuOpen, setIsLangMenuOpen] = useState(false);
-  const [currentLang, setCurrentLang] = useState('EN');
-  const languages = [{ code: 'EN', name: 'English' }, { code: 'CN', name: 'Chinese' }];
   const langMenuRef = useRef<HTMLDivElement>(null);
 
   const activeLinkClass = "text-primary dark:text-primary font-bold";
   const inactiveLinkClass = "text-text-primary-light hover:text-primary dark:text-text-primary-dark dark:hover:text-primary";
 
+  const navLinks = [
+    { name: t('header.home'), path: '/home' },
+    { name: t('header.services'), path: '/services' },
+    { name: t('header.pricing'), path: '/pricing' },
+    { name: t('header.about'), path: '/about' },
+    { name: t('header.blog'), path: '/blog' },
+    { name: t('header.faq'), path: '/faq' },
+    { name: t('header.contact'), path: '/contact' },
+  ];
+
+  const languages = [
+    { code: 'en', name: 'English' },
+    { code: 'zh', name: 'Chinese' }
+  ];
+
   const handleLangChange = (langCode: string) => {
-    setCurrentLang(langCode);
+    i18n.changeLanguage(langCode);
     setIsLangMenuOpen(false);
   };
 
@@ -53,7 +60,7 @@ const Header = ({ logoUrl }: { logoUrl: string | null }) => {
                   <path clipRule="evenodd" d="M24 2L46 24L24 46L2 24L24 2ZM24 10L34 20L24 30L14 20L24 10Z" fillRule="evenodd"></path>
                 </svg>
               </div>
-              <h2 className="text-lg font-bold tracking-tight text-text-primary-light dark:text-text-primary-dark">VSG Secretary</h2>
+              <h2 className="text-lg font-bold tracking-tight text-text-primary-light dark:text-text-primary-dark">{t('header.title')}</h2>
             </>
           )}
         </NavLink>
@@ -61,7 +68,7 @@ const Header = ({ logoUrl }: { logoUrl: string | null }) => {
         <nav className="hidden items-center gap-8 md:flex">
           {navLinks.map((link) => (
             <NavLink
-              key={link.name}
+              key={link.path}
               to={link.path}
               className={({ isActive }) => `${isActive ? activeLinkClass : inactiveLinkClass} text-sm font-medium transition-colors`}
               end
@@ -80,7 +87,7 @@ const Header = ({ logoUrl }: { logoUrl: string | null }) => {
               aria-expanded={isLangMenuOpen}
             >
               <span className="material-symbols-outlined !text-xl">language</span>
-              <span>{currentLang}</span>
+              <span>{languages.find(l => l.code === i18n.language)?.name || 'English'}</span>
               <span className={`material-symbols-outlined !text-base transition-transform ${isLangMenuOpen ? 'rotate-180' : ''}`}>expand_more</span>
             </button>
             {isLangMenuOpen && (
@@ -99,7 +106,7 @@ const Header = ({ logoUrl }: { logoUrl: string | null }) => {
             )}
           </div>
           <Link to="/incorporation" className="hidden min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-6 bg-primary text-white text-sm font-bold leading-normal tracking-wide shadow-lg shadow-primary/25 transition-all hover:scale-105 hover:bg-primary-hover hover:shadow-primary/40 sm:flex">
-            <span className="truncate">Start Incorporation</span>
+            <span className="truncate">{t('header.incorporation')}</span>
           </Link>
           <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="p-2 md:hidden">
             <span className="material-symbols-outlined text-text-primary-light dark:text-text-primary-dark">{isMenuOpen ? 'close' : 'menu'}</span>
@@ -113,7 +120,7 @@ const Header = ({ logoUrl }: { logoUrl: string | null }) => {
           <nav className="flex flex-col space-y-2 p-4">
             {navLinks.map((link) => (
               <NavLink
-                key={link.name}
+                key={link.path}
                 to={link.path}
                 onClick={() => setIsMenuOpen(false)}
                 className={({ isActive }) => `${isActive ? activeLinkClass : inactiveLinkClass} rounded-md px-3 py-2 text-base font-medium`}
@@ -123,7 +130,7 @@ const Header = ({ logoUrl }: { logoUrl: string | null }) => {
               </NavLink>
             ))}
             <Link to="/incorporation" className="mt-4 flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-slate-50 text-sm font-bold leading-normal tracking-[0.015em] transition-opacity hover:opacity-90">
-              <span className="truncate">Start Incorporation</span>
+              <span className="truncate">{t('header.incorporation')}</span>
             </Link>
           </nav>
         </div>

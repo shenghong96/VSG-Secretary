@@ -1,0 +1,1034 @@
+{
+    "header": {
+        "title": "VSG Secretary",
+        "home": "Home",
+        "incorporation": "Company Incorporation",
+        "taxAccounting": "Tax & Accounting",
+        "pricing": "Pricing",
+        "login": "Login",
+        "contactSync": "Sync with ACRA",
+        "services": "Services",
+        "about": "About Us",
+        "blog": "Blog",
+        "faq": "FAQ",
+        "contact": "Contact"
+    },
+    "hero": {
+        "title": "Seamless Corporate Services in Singapore",
+        "subtitle": "Professional secretarial, accounting, and incorporation services tailored for your business growth.",
+        "cta": "Get Started",
+        "learnMore": "Learn More"
+    },
+    "incorporationPage": {
+        "hero": {
+            "title": "100% Online Company Registration",
+            "highlight": "No Hidden Fees",
+            "subtitle": "Get your company fully registered with SSM from the comfort of your home. We handle the paperwork, you focus on your business.",
+            "cta": "Incorporate Now",
+            "consultation": "Book a Consultation"
+        },
+        "features": {
+            "title": "Why Choose VSG Secretary",
+            "subtitle": "We simplify the incorporation process with expert support every step of the way.",
+            "list": [
+                {
+                    "title": "Expert Guidance",
+                    "text": "Our team of experienced company secretaries ensures compliance and provides proactive advice.",
+                    "icon": "school"
+                },
+                {
+                    "title": "Seamless Online Process",
+                    "text": "Complete your incorporation and secretarial tasks entirely online, anytime, anywhere.",
+                    "icon": "laptop_mac"
+                },
+                {
+                    "title": "Transparent Pricing",
+                    "text": "No hidden fees, clear breakdowns for all services, and competitive rates.",
+                    "icon": "payments"
+                },
+                {
+                    "title": "Dedicated Support",
+                    "text": "Get personalized assistance from our friendly and knowledgeable customer support team.",
+                    "icon": "support_agent"
+                },
+                {
+                    "title": "Efficiency & Speed",
+                    "text": "We leverage technology to make your business setup and compliance fast and hassle-free.",
+                    "icon": "rocket_launch"
+                }
+            ]
+        },
+        "pricing": {
+            "title": "Incorporation Package",
+            "description": "The complete package to get your company registered and ready to operate.",
+            "price": "RM1,499",
+            "origPrice": "RM1,800",
+            "cta": "Get Incorporated Now",
+            "items": [
+                "Includes RM1,010 SSM Incorporation Fee",
+                "Up to 3 company name searches with expert advice",
+                "Full document preparation & submission to SSM",
+                "Bank account opening resolution",
+                "Follow-up until registration is complete",
+                "Appointment of licensed company secretary (within 30 days)",
+                "24/7 online access to documents",
+                "1-time free update within 30 days",
+                "Free business and equity consultation",
+                "Equity crowdfunding consultation",
+                "50% off company constitution / term sheet / shareholder agreement"
+            ]
+        },
+        "steps": {
+            "title": "Incorporation Just in 4 Simple Steps",
+            "list": [
+                {
+                    "num": 1,
+                    "title": "Choose Your Package",
+                    "text": "Select the incorporation plan that best fits your business needs."
+                },
+                {
+                    "num": 2,
+                    "title": "Submit Information",
+                    "text": "Fill out our secure online forms with your company and director details."
+                },
+                {
+                    "num": 3,
+                    "title": "Verification & Filing",
+                    "text": "We verify your documents and submit the application to SSM on your behalf."
+                },
+                {
+                    "num": 4,
+                    "title": "Receive Documents",
+                    "text": "Once approved, you'll receive all official incorporation documents digitally."
+                }
+            ]
+        },
+        "checklist": {
+            "title": "After Incorporation: What's Next?",
+            "subtitle": "We specialize in corporate secretarial services. For other professional services, we partner with trusted providers and can provide referrals.",
+            "boxTitle": "Your Post-Incorporation Checklist",
+            "immediate": {
+                "title": "Immediate Actions (First 30 Days)",
+                "items": [
+                    {
+                        "item": "Appoint Company Secretary",
+                        "desc": "We provide this"
+                    },
+                    {
+                        "item": "Open Corporate Bank Account",
+                        "desc": "We prepare documents"
+                    },
+                    {
+                        "item": "Set Up Accounting System",
+                        "desc": "We can recommend partners"
+                    },
+                    {
+                        "item": "Register with Tax Authorities (LHDN)",
+                        "desc": "We guide you"
+                    },
+                    {
+                        "item": "Set Up EPF/SOCSO/EIS",
+                        "desc": "We assist with registration"
+                    }
+                ]
+            },
+            "ongoing": {
+                "title": "Ongoing Compliance",
+                "items": [
+                    {
+                        "item": "Monthly",
+                        "desc": "Bookkeeping, payroll, tax estimates"
+                    },
+                    {
+                        "item": "Annually",
+                        "desc": "Financial statements, audit, tax returns"
+                    },
+                    {
+                        "item": "Continuous",
+                        "desc": "SSM compliance, license renewals"
+                    }
+                ]
+            }
+        },
+        "partner": {
+            "title": "Why Partner With VSG Secretary?",
+            "text": "🎯 We Specialize in Corporate Compliance. While we don't provide audit or accounting services directly, we excel at what we do. Our focus ensures your business stays compliant and well-governed."
+        },
+        "faq": {
+            "title": "Frequently Asked Questions",
+            "subtitle": "Quick answers to common questions about our services.",
+            "list": [
+                {
+                    "category": "Services",
+                    "question": "Do you provide accounting or audit services?",
+                    "answer": "No, we specialize exclusively in corporate secretarial services to ensure the highest level of expertise in compliance and governance. However, we have a network of trusted partners we can recommend for your accounting, audit, and tax needs."
+                },
+                {
+                    "category": "Services",
+                    "question": "What's the difference between secretarial, accounting, and audit services?",
+                    "answer": "It's simple: We handle SSM filings, ensure compliance with the Companies Act, and manage corporate documents. Accountants record your financial transactions and prepare financial statements. Auditors independently verify those financial statements. Tax agents handle your tax calculations and submissions to LHDN."
+                },
+                {
+                    "category": "Services",
+                    "question": "Can you help me find reliable service providers?",
+                    "answer": "Absolutely! This is one of the key benefits of working with us. We maintain a curated network of trusted and vetted auditors, accountants, and tax professionals. We can make introductions based on your business needs and budget, saving you time and uncertainty."
+                },
+                {
+                    "category": "Costs",
+                    "question": "How much should I budget for accounting services?",
+                    "answer": "For most startups and small businesses, a typical budget is between RM300-800 per month for basic bookkeeping. This can vary based on your company's transaction volume and complexity. We provide transparent cost guidance and can connect you with partners who fit your budget."
+                },
+                {
+                    "category": "Compliance",
+                    "question": "What specific compliance services do you provide?",
+                    "answer": "We manage all your company's requirements with the Suruhanjaya Syarikat Malaysia (SSM). This includes filing annual returns, preparing AGM minutes, updating company information, managing beneficial owner registrations, maintaining statutory records, and ensuring all corporate documents are in order."
+                }
+            ]
+        }
+    },
+    "incorporation": {
+        "title": "Company Incorporation",
+        "subtitle": "Start your business in Singapore with ease. We handle all the paperwork.",
+        "steps": {
+            "step1": "Submit Details",
+            "step2": "Document Prep",
+            "step3": "Submission",
+            "step4": "Incorporation"
+        },
+        "calculator": {
+            "title": "Estimated Fee Calculator",
+            "revenue": "Annual Revenue",
+            "employees": "Number of Employees",
+            "calculate": "Calculate Fee",
+            "estimatedFee": "Estimated Annual Fee"
+        }
+    },
+    "components": {
+        "feeCalculator": {
+            "title": "Compliance Fee Calculator",
+            "subtitle": "Estimate your annual audit, tax, and monthly accounting costs.",
+            "financialsTitle": "Company Financials (Estimates)",
+            "totalAssets": "Total Assets (RM)",
+            "totalRevenue": "Total Revenue (RM)",
+            "totalExpenses": "Total Expenses (RM)",
+            "note": "Note: Fees are estimated based on the \"Financial Level\" which is the highest of your Total Assets, Revenue, or Expenses.",
+            "estimatedFeesTitle": "Estimated Professional Fees",
+            "accounting": {
+                "title": "Accounting Services",
+                "subtitle": "Monthly Estimate",
+                "unit": "/ month"
+            },
+            "audit": {
+                "title": "Audit Fee",
+                "subtitle": "Annual Estimate",
+                "surcharge": "Professional Fee Surcharge",
+                "total": "Total Audit"
+            },
+            "tax": {
+                "title": "Tax Agent Fee",
+                "subtitle": "Annual Estimate (Compliance)",
+                "surcharge": "Professional Fee Surcharge",
+                "total": "Total Tax"
+            },
+            "disclaimer": "* Estimates exclude SST, disbursements, and complex issues. Final quote may vary.",
+            "toBeAssessed": "To be assessed",
+            "contactForQuote": "Contact for Quote"
+        }
+    },
+    "pricing": {
+        "title": "Transparent Pricing",
+        "subtitle": "No hidden fees. Choose the plan that fits your needs.",
+        "plans": {
+            "basic": "Basic",
+            "pro": "Professional",
+            "enterprise": "Enterprise"
+        }
+    },
+    "homePage": {
+        "hero": {
+            "badge": "The #1 Corporate Secretary in Malaysia",
+            "title": "Corporate Secretarial Services",
+            "highlight": "Made Simple",
+            "subtitle": "Your trusted partner for company incorporation, governance, and compliance in Malaysia. Focus on your business, we'll handle the rest.",
+            "cta": "Get Started Now",
+            "services": "Our Services"
+        },
+        "trust": {
+            "registered": "Companies Registered",
+            "fast": "Fast Incorporation",
+            "satisfaction": "Client Satisfaction",
+            "experience": "Combined Experience"
+        },
+        "whyChoose": {
+            "title": "Why Partner with VSG Secretary?",
+            "subtitle": "We simplify compliance so you can focus on growth.",
+            "expert": {
+                "title": "Expert Team",
+                "text": "Our licensed professionals provide accurate, reliable guidance tailored to your business needs."
+            },
+            "efficient": {
+                "title": "Efficient Process",
+                "text": "Leveraging technology, we streamline incorporation and compliance, saving you time and effort."
+            },
+            "transparent": {
+                "title": "Transparent Pricing",
+                "text": "No hidden fees. Our clear, upfront pricing ensures you know exactly what you're paying for."
+            }
+        },
+        "testimonials": {
+            "title": "What Our Clients Say",
+            "subtitle": "We're proud to have earned the trust of businesses across Malaysia.",
+            "list": [
+                {
+                    "quote": "VSG Secretary made the entire incorporation process seamless and stress-free. Their team was professional, responsive, and incredibly knowledgeable. Highly recommended!",
+                    "name": "Ahmad Zulkifli",
+                    "title": "Founder, TechNova Solutions"
+                },
+                {
+                    "quote": "Switching to VSG for our secretarial services was the best decision we made. They handle all our compliance needs efficiently, allowing us to focus completely on our operations.",
+                    "name": "Chen Wei Ling",
+                    "title": "CEO, Urban Bites Cafe"
+                },
+                {
+                    "quote": "The expertise and guidance from VSG have been invaluable. They are more than just a service provider; they are a true partner in our company's growth and success.",
+                    "name": "Suresh Ramachandran",
+                    "title": "Managing Director, Global Exports Sdn Bhd"
+                }
+            ]
+        },
+        "cta": {
+            "title": "Ready to Start and Grow Your Business?",
+            "text": "Let us handle the complexities of corporate governance and compliance. Contact us today for a personalized consultation.",
+            "button": "Book a Free Consultation"
+        }
+    },
+    "pricingPage": {
+        "hero": {
+            "badge": "Transparent Pricing",
+            "title": "Clear & Simple",
+            "highlight": "Pricing for Growth",
+            "subtitle": "Find the right plan for your business. No hidden fees, ever. We believe in transparency and providing value from day one.",
+            "guarantee": "30-Day Money-Back Guarantee"
+        },
+        "oneTime": {
+            "title": "One-time Fee",
+            "badge": "All-Inclusive Package",
+            "price": "RM1899",
+            "desc": "One-time fee to get your company registered.",
+            "featuresTitle": "Everything you need to kickstart your business in Malaysia:",
+            "features": [
+                "Company Name Registration",
+                "SSM Filing Fees Included",
+                "1 set Bank Account Opening Resolution",
+                "First Board Resolution",
+                "24/7 Access to Client Portal"
+            ],
+            "cta": "Incorporate Now"
+        },
+        "ongoing": {
+            "title": "Ongoing Secretarial Services",
+            "subtitle": "Keep your company compliant with our hassle-free annual plan.",
+            "basic": {
+                "title": "Basic",
+                "desc": "Essential services to keep you compliant.",
+                "price": "RM89",
+                "unit": "/ month",
+                "cta": "Select Basic Plan"
+            },
+            "annual": {
+                "badge": "Most Popular",
+                "title": "Annual Package",
+                "desc": "Best value for long-term peace of mind.",
+                "price": "RM1500",
+                "unit": "/ year",
+                "cta": "Choose Annual Plan"
+            }
+        },
+        "adhoc": {
+            "title": "Ad-hoc Services & Rates",
+            "subtitle": "Need something specific? We offer a wide range of ad-hoc services. Contact us for a personalized quote.",
+            "list": [
+                {
+                    "category": "Annual Submission Service",
+                    "icon": "event_note",
+                    "services": [
+                        {
+                            "name": "Annual Return Filing",
+                            "price": "400",
+                            "notes": "up to 5 directors/shareholders, +50 per additional (excl. SSM fees)"
+                        },
+                        {
+                            "name": "Unaudited/Audited Financial Statement Submission",
+                            "price": "300",
+                            "notes": "Excl. SSM filing fees and online data entry"
+                        },
+                        {
+                            "name": "Beneficial Owner (BO) Submission/Update",
+                            "price": "300",
+                            "notes": "Up to 3 Beneficiary Owner, +100 each additional"
+                        },
+                        {
+                            "name": "SSM Fees for Annual Submission",
+                            "price": "200",
+                            "notes": "Government filing fees"
+                        }
+                    ]
+                },
+                {
+                    "category": "Company Updates & Changes",
+                    "icon": "change_circle",
+                    "services": [
+                        {
+                            "name": "Change of Business/Branch Address",
+                            "price": "100",
+                            "notes": "each"
+                        },
+                        {
+                            "name": "Company Name Reservation",
+                            "price": "100",
+                            "notes": "each (incl. SSM fees)"
+                        },
+                        {
+                            "name": "Change of Accounting Records Address",
+                            "price": "100",
+                            "notes": "each"
+                        },
+                        {
+                            "name": "Change of Company Name",
+                            "price": "400",
+                            "notes": "Include SSM fees"
+                        },
+                        {
+                            "name": "Application for EPC (Exempt Private Company)",
+                            "price": "800",
+                            "notes": "incl. SSM fees"
+                        },
+                        {
+                            "name": "Change of Nature of Business",
+                            "price": "250",
+                            "notes": ""
+                        }
+                    ]
+                },
+                {
+                    "category": "Constitution & Share Capital",
+                    "icon": "account_balance",
+                    "services": [
+                        {
+                            "name": "Preparation of Term Sheet",
+                            "price": "From 1,500",
+                            "notes": "Drafting key investment terms"
+                        },
+                        {
+                            "name": "Preparation of Shareholder Agreement",
+                            "price": "From 3,000",
+                            "notes": "Custom agreement for rights & protections"
+                        },
+                        {
+                            "name": "Preparation of Constitution",
+                            "price": "From 2,000",
+                            "notes": "Drafting the company's governing rules"
+                        },
+                        {
+                            "name": "Adoption of Constitution",
+                            "price": "100",
+                            "notes": ""
+                        },
+                        {
+                            "name": "Amendment/Abolition of M&A",
+                            "price": "500",
+                            "notes": "include SSM Fees"
+                        },
+                        {
+                            "name": "Share Allotment (first 3 allotments)",
+                            "price": "300",
+                            "notes": "+50/additional allotment, for existing Shareholder only"
+                        },
+                        {
+                            "name": "Transfer of Shares",
+                            "price": "300/transfer",
+                            "notes": "Excl. stamp duty"
+                        },
+                        {
+                            "name": "Capital Reduction/Conversion/Subdivision of Shares",
+                            "price": "From 1,000",
+                            "notes": ""
+                        }
+                    ]
+                },
+                {
+                    "category": "Directors & Shareholders",
+                    "icon": "groups",
+                    "services": [
+                        {
+                            "name": "Update Director/Shareholder Particulars",
+                            "price": "100",
+                            "notes": "each"
+                        },
+                        {
+                            "name": "Appointment of Corporate Representative & Authorized Representatives",
+                            "price": "200",
+                            "notes": ""
+                        },
+                        {
+                            "name": "Appointment of Director",
+                            "price": "100",
+                            "notes": "each"
+                        },
+                        {
+                            "name": "Resignation of Director",
+                            "price": "100",
+                            "notes": "each"
+                        },
+                        {
+                            "name": "Removal of Director",
+                            "price": "200",
+                            "notes": "excl. meeting/notice costs"
+                        },
+                        {
+                            "name": "Update BO Details",
+                            "price": "50",
+                            "notes": "per BO"
+                        },
+                        {
+                            "name": "Cease as BO",
+                            "price": "50",
+                            "notes": "per BO"
+                        }
+                    ]
+                },
+                {
+                    "category": "Auditor, Tax Agent & Financial Year",
+                    "icon": "monitoring",
+                    "services": [
+                        {
+                            "name": "Fixing of 1st FYE & Appointment of Auditor/Tax Agent",
+                            "price": "200",
+                            "notes": ""
+                        },
+                        {
+                            "name": "Change of Auditor",
+                            "price": "150",
+                            "notes": ""
+                        },
+                        {
+                            "name": "Change of Tax Agent",
+                            "price": "100",
+                            "notes": ""
+                        },
+                        {
+                            "name": "Change of FYE",
+                            "price": "150",
+                            "notes": ""
+                        },
+                        {
+                            "name": "Extension of Time for FS (EOT)",
+                            "price": "350",
+                            "notes": "incl. SSM fees"
+                        }
+                    ]
+                },
+                {
+                    "category": "Dividends, Resolutions & Certifications",
+                    "icon": "payments",
+                    "services": [
+                        {
+                            "name": "Dividend Declaration",
+                            "price": "300",
+                            "notes": "for first, then +50 for 2nd onwards"
+                        },
+                        {
+                            "name": "Purchase of SSM Profile/Form",
+                            "price": "50",
+                            "notes": "Include SSM Fees"
+                        },
+                        {
+                            "name": "Bank Resolutions (Open/Close/Change Signatories)",
+                            "price": "150/account",
+                            "notes": "incl. CTC"
+                        },
+                        {
+                            "name": "Certified True Copy (CTC) Documents",
+                            "price": "5",
+                            "notes": "per form"
+                        }
+                    ]
+                },
+                {
+                    "category": "Meetings, Delivery & Misc.",
+                    "icon": "local_shipping",
+                    "services": [
+                        {
+                            "name": "Secretary Meeting Attendance",
+                            "price": "700 per day",
+                            "notes": "AGM / EGM"
+                        },
+                        {
+                            "name": "Attending Matters Outside Office",
+                            "price": "300/hour/pax",
+                            "notes": "Other than AGM / EGM, excl. travel"
+                        },
+                        {
+                            "name": "Courier Service",
+                            "price": "10",
+                            "notes": "+ delivery fee"
+                        },
+                        {
+                            "name": "Instant Delivery",
+                            "price": "From 50",
+                            "notes": "+ delivery fee"
+                        },
+                        {
+                            "name": "Virtual Business Address (mail notification & scanning)",
+                            "price": "1,800/year",
+                            "notes": ""
+                        }
+                    ]
+                },
+                {
+                    "category": "Termination, Strike-Off & Winding Up",
+                    "icon": "cancel",
+                    "services": [
+                        {
+                            "name": "Strike-Off Application (Dormant Co.)",
+                            "price": "From 3,000",
+                            "notes": "excl. SSM fees"
+                        },
+                        {
+                            "name": "Members' Voluntary Winding Up",
+                            "price": "From 10,000",
+                            "notes": ""
+                        }
+                    ]
+                },
+                {
+                    "category": "Business & Corporate Services",
+                    "icon": "business_center",
+                    "services": [
+                        {
+                            "name": "LLP Registration",
+                            "price": "1,888",
+                            "notes": "incl. SSM fee, complete registration package"
+                        },
+                        {
+                            "name": "Business License",
+                            "price": "Quote",
+                            "notes": "Various license types available"
+                        },
+                        {
+                            "name": "Accounting & Bookkeeping",
+                            "price": "Quote",
+                            "notes": "Dormant: 800, Monthly: 1,800"
+                        },
+                        {
+                            "name": "Tax Filing",
+                            "price": "From 1,500",
+                            "notes": "Corporate tax preparation"
+                        },
+                        {
+                            "name": "Audit",
+                            "price": "From 1,500/report",
+                            "notes": "Professional audit services"
+                        },
+                        {
+                            "name": "Employment Pass (Expatriates)",
+                            "price": "From 10,000",
+                            "notes": "Complete EP application"
+                        },
+                        {
+                            "name": "HR & Employment",
+                            "price": "From 1,500",
+                            "notes": "HR consultation & setup"
+                        },
+                        {
+                            "name": "Payroll Outsourcing",
+                            "price": "From 80",
+                            "notes": "per headcount, monthly management"
+                        },
+                        {
+                            "name": "Trademark Registration",
+                            "price": "Quote",
+                            "notes": "Intellectual property protection"
+                        },
+                        {
+                            "name": "Corporate Website",
+                            "price": "From 4,500",
+                            "notes": "Professional web development"
+                        }
+                    ]
+                },
+                {
+                    "category": "Other Services",
+                    "icon": "build_circle",
+                    "services": [
+                        {
+                            "name": "Confirmation Letter – No Constitution",
+                            "price": "100",
+                            "notes": ""
+                        },
+                        {
+                            "name": "Confirmation Letter (General)",
+                            "price": "From 150",
+                            "notes": ""
+                        },
+                        {
+                            "name": "Self-Ink Rubber Stamp",
+                            "price": "100/unit",
+                            "notes": ""
+                        },
+                        {
+                            "name": "Common Seal (ø38mm)",
+                            "price": "From 100",
+                            "notes": ""
+                        },
+                        {
+                            "name": "Other Resolution/Letter Preparation",
+                            "price": "100/letter",
+                            "notes": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        "terms": {
+            "title": "Terms and Conditions",
+            "list": [
+                "<strong>Taxes and Fees:</strong> All government fees, agency charges, and disbursements (e.g., printing, courier, stationery) are borne by the client.",
+                "<strong>Payment Terms:</strong> Payment is due within 7 days from invoice date. Late payments may incur interest at 1.5% per month (calculated daily).",
+                "<strong>Turnaround Time:</strong> Normal service is 3–7 business days. Urgent requests may be processed within 1–2 business days, subject to RM150 express fee per request.",
+                "<strong>Confidentiality:</strong> All client information will be kept confidential, except where disclosure is required by law, regulation, or court order.",
+                "<strong>Limitation of Liability:</strong> Our liability for any claim shall not exceed the total fees paid by the client for the specific service giving rise to the claim. We are not liable for indirect or consequential damages.",
+                "<strong>Governing Law:</strong> These terms are governed by the laws of Malaysia, and disputes shall be resolved in Malaysian courts."
+            ]
+        },
+        "disclaimers": {
+            "title": "Disclaimers",
+            "list": [
+                "Advice and recommendations are based solely on information provided by the client.",
+                "Clients are responsible for all business decisions made based on our advice or recommendations.",
+                "Our services are limited to the agreed scope outlined in the invoice/engagement letter. Any additional services will require separate agreement and may incur additional fees.",
+                "We do not guarantee approval by authorities, nor exemption from fines or penalties arising from regulatory non-compliance."
+            ]
+        },
+        "note": {
+            "title": "Please Note",
+            "list": [
+                "All professional fees listed exclude government/agency charges (e.g., SSM, LHDN, local councils).",
+                "Fees may vary depending on complexity; additional charges will be communicated and agreed in advance.",
+                "Disbursements such as courier, printing, and stamping are billed separately unless otherwise stated."
+            ]
+        }
+    },
+    "servicesPage": {
+        "hero": {
+            "badge": "Services",
+            "title": "Comprehensive",
+            "highlight": "Corporate Solutions",
+            "subtitle": "We provide comprehensive virtual, secretarial, and governance solutions to ensure your business operates smoothly and complies with all regulatory requirements."
+        },
+        "secretarial": {
+            "title": "Company Secretarial",
+            "items": [
+                {
+                    "title": "Board Meeting Support",
+                    "content": "Comprehensive support for board meetings, including agenda preparation, board pack distribution, and attendance.",
+                    "subtext": "Why this matters: Ensures meetings are productive, decisions are well-documented, and director duties are fulfilled."
+                },
+                {
+                    "title": "Statutory Filings",
+                    "content": "Ensuring timely and accurate submission of all required statutory documents (like Annual Returns) to SSM.",
+                    "subtext": "Why this matters: Avoids late penalties and maintains your company's good standing with regulators."
+                },
+                {
+                    "title": "Minute Taking",
+                    "content": "Professional and precise minute-taking services to accurately document discussions and decisions.",
+                    "subtext": "Case Study: A tech startup saved 10+ executive hours per month by outsourcing minute-taking to us."
+                }
+            ]
+        },
+        "governance": {
+            "title": "Corporate Governance",
+            "items": [
+                {
+                    "title": "Policy Development",
+                    "content": "Expert assistance in drafting, reviewing, and implementing corporate policies to ensure best practices.",
+                    "subtext": "Why this matters: Creates a strong ethical framework and reduces operational risks."
+                },
+                {
+                    "title": "Governance Audits",
+                    "content": "Conducting thorough audits of your governance structures to identify areas for improvement and ensure compliance.",
+                    "subtext": "Why this matters: Proactively identifies weaknesses before they become legal or financial problems."
+                },
+                {
+                    "title": "Director Training",
+                    "content": "Providing bespoke training sessions for directors on their duties, responsibilities, and corporate governance.",
+                    "subtext": "Why this matters: Empowers your leadership with the knowledge to make informed, compliant decisions."
+                }
+            ]
+        },
+        "compliance": {
+            "title": "Compliance Management",
+            "items": [
+                {
+                    "title": "MBRS & Regulatory Reporting",
+                    "content": "Managing and submitting all necessary MBRS and regulatory reports on your behalf, ensuring accuracy and timeliness.",
+                    "subtext": "Why this matters: Navigates the complex MBRS system correctly, saving you time and preventing errors."
+                },
+                {
+                    "title": "Compliance Frameworks",
+                    "content": "Developing and implementing robust compliance frameworks tailored to your industry and business needs.",
+                    "subtext": "Why this matters: Establishes a systematic approach to managing your legal and regulatory obligations."
+                },
+                {
+                    "title": "Risk Assessment",
+                    "content": "Identifying, assessing, and mitigating potential compliance risks to protect your business's reputation and finances.",
+                    "subtext": "Why this matters: A proactive strategy to safeguard your company against unforeseen compliance issues."
+                }
+            ]
+        },
+        "cta": {
+            "title": "Ready to Streamline Your Governance?",
+            "text": "Let us handle the complexities of corporate governance and compliance so you can focus on what you do best. Contact us for a personalized consultation.",
+            "button": "Book a Free Consultation"
+        }
+    },
+    "aboutPage": {
+        "hero": {
+            "badge": "About VSG Secretary",
+            "title": "Your Trusted Partner in",
+            "highlight": "Corporate Governance",
+            "subtitle": "We provide expert virtual secretarial and governance services to ensure your company operates with efficiency, integrity, and full compliance."
+        },
+        "mission": {
+            "title": "Our Mission",
+            "list": [
+                "To simplify corporate compliance through innovation and digital solutions.",
+                "To provide accurate, timely, and transparent company secretarial services.",
+                "To support entrepreneurs and SMEs with expert guidance in governance."
+            ]
+        },
+        "vision": {
+            "title": "Our Vision",
+            "text": "To become Malaysia’s most trusted and technology-driven company secretary firm, empowering businesses to stay compliant effortlessly while focusing on growth."
+        },
+        "story": {
+            "title": "Our Story",
+            "p1": "Founded on 1 June 2024, VSG Secretary was established with a clear mission — to make corporate secretarial and compliance services more accessible, transparent, and efficient for Malaysian businesses.",
+            "p2": "We understand the challenges entrepreneurs face in managing governance and statutory obligations, so we built a system that blends professional expertise with digital convenience.",
+            "p3": "Within a short time, we have supported dozens of companies in incorporation, compliance, and reporting, growing rapidly through trust, reliability, and innovation. Our story is just beginning."
+        },
+        "milestones": {
+            "title": "Our Milestones",
+            "list": [
+                {
+                    "year": "2024",
+                    "event": "VSG Secretary was formed on 1 June 2024."
+                },
+                {
+                    "year": "2025",
+                    "event": "Registered our 50th company in February 2025."
+                }
+            ]
+        },
+        "commitment": {
+            "title": "Our Commitment",
+            "licensedTitle": "Licensed & Accredited",
+            "text1": "We are a licensed company secretary firm registered with the Companies Commission of Malaysia (SSM), ensuring our services meet the highest standards of corporate governance and compliance.",
+            "text2": "Our team comprises qualified and certified professionals with deep experience in company law, governance, and regulatory filings."
+        },
+        "team": {
+            "badge": "Leadership",
+            "title": "Meet the Team",
+            "subtitle": "Our strength lies in our experienced and dedicated professionals.",
+            "members": [
+                {
+                    "name": "Sheng Hong",
+                    "title": "Chief Executive Officer",
+                    "bio": "Sheng Hong leads the overall operations, strategy, sales, and marketing at VSG. Before founding VSG, he spent over five years at Syarikat Ong, where he gained deep expertise in corporate secretarial practices, and three years at pitchIN as an Investment Analyst, honing his skills in startup investments and corporate governance."
+                },
+                {
+                    "name": "Philip George",
+                    "title": "Co-Founder",
+                    "bio": "Philip drives technology, growth, and fundraising at VSG. Prior to VSG, he co-founded several technology ventures spanning healthcare, property, and travel & tourism, gaining broad experience in scaling tech-driven businesses and product innovation."
+                },
+                {
+                    "name": "Lam Yao Xiang",
+                    "title": "Company Secretary",
+                    "bio": "Lam Yao Xiang is a licensed SSM practicing company secretary under MAISCA. He brings extensive corporate governance and compliance experience from his tenure at Boardroom and Syarikat Ong, supporting companies in meeting regulatory standards and best practices."
+                },
+                {
+                    "name": "Lau Jun Yan",
+                    "title": "Marketing Lead",
+                    "bio": "Lau Jun Yan oversees marketing strategy and digital growth at VSG Secretary. Before joining VSG, he co-founded and managed his own marketing agency, leading a team of five. He brings extensive experience in digital marketing, including Facebook and Google advertising, campaign optimization, and social media management across platforms such as Xiao Hong Shu."
+                }
+            ]
+        },
+        "cta": {
+            "title": "Ready to Streamline Your Governance?",
+            "text": "Let's discuss how VSG Secretary can support your company's success. Reach out to our team today for a complimentary consultation.",
+            "button": "Get In Touch"
+        }
+    },
+    "contactPage": {
+        "hero": {
+            "badge": "Contact Us",
+            "title": "Get in",
+            "highlight": "Touch",
+            "subtitle": "We'd love to hear from you. We typically respond within 2 business hours."
+        },
+        "form": {
+            "name": "Name",
+            "namePlaceholder": "Enter your full name",
+            "email": "Email",
+            "emailPlaceholder": "Enter your email address",
+            "subject": "Subject",
+            "subjectPlaceholder": "What is your message about?",
+            "message": "Message",
+            "messagePlaceholder": "Write your message here...",
+            "button": "Send Message",
+            "sending": "Sending..."
+        },
+        "info": {
+            "title": "Contact Information",
+            "email": "Email",
+            "phone": "Phone",
+            "office": "Office",
+            "address": "33-01-13A, 33rd Floor, Menara Keck Seng, 203, Jalan Bukit Bintang, 55100 Kuala Lumpur, W.P. Kuala Lumpur, Malaysia"
+        }
+    },
+    "faqPage": {
+        "hero": {
+            "badge": "Help & Support",
+            "title": "Frequently Asked",
+            "highlight": "Questions",
+            "subtitle": "Have a question? We're here to help. Find answers to common questions below."
+        },
+        "cta": {
+            "title": "Can't find an answer?",
+            "text": "Our team is ready to assist you. We respond within 2 business hours.",
+            "button": "Contact Us"
+        },
+        "categories": {
+            "All": "All",
+            "Company Incorporation": "Company Incorporation",
+            "Secretarial Services": "Secretarial Services",
+            "Billing & Payments": "Billing & Payments",
+            "General": "General"
+        },
+        "items": [
+            {
+                "q": "What is a \"Sdn. Bhd.\" company?",
+                "a": "<p>A \"Sdn. Bhd.\" (Sendirian Berhad) is a private limited company in Malaysia. It is treated as a separate legal entity from its owners, meaning it can own property, enter into contracts, and be sued. The key benefit is that shareholders' liability is limited to the amount of their investment in shares.</p>",
+                "category": "Company Incorporation"
+            },
+            {
+                "q": "How long does incorporation take?",
+                "a": "<p>The incorporation process typically takes between 3-7 working days. This timeframe is subject to the processing speed and approval by the Companies Commission of Malaysia (SSM).</p>",
+                "category": "Company Incorporation"
+            },
+            {
+                "q": "What do I need to get started?",
+                "a": "<div class=\"space-y-4\"><p>To begin, you will need to provide the following:</p><ul class=\"list-disc pl-5 space-y-1\"><li>Proposed company names (at least 3 options).</li><li>Description of your principal business activities.</li><li>Identification and address documents for all directors and shareholders.</li></ul><p class=\"mt-4 font-semibold\">Document Checklist:</p><div><h4 class=\"font-semibold text-text-primary-light dark:text-text-primary-dark mb-2\">1. Identity Verification</h4><ul class=\"list-disc pl-5 space-y-1\"><li><strong>Malaysian Nationals:</strong> Copy of both front and back of NRIC.</li><li><strong>Foreign Nationals:</strong> Clear copy of passport information page.</li></ul></div><div><h4 class=\"font-semibold text-text-primary-light dark:text-text-primary-dark mb-2\">2. Proof of Residential Address</h4><ul class=\"list-disc pl-5 space-y-1\"><li><strong>Malaysians & Foreigners:</strong> A recent personal bank statement or utility bill showing your full name and residential address.</li></ul><p class=\"mt-2 text-xs italic\">Note: If your current address differs from your ID, please provide an additional proof of residence.</p></div><div><h4 class=\"font-semibold text-text-primary-light dark:text-text-primary-dark mb-2\">3. Online Identity Verification</h4><p>A brief online meeting (e.g., Zoom) will be arranged for identity verification, where you'll need to show your original NRIC/passport.</p></div></div>",
+                "category": "Company Incorporation"
+            },
+            {
+                "q": "Who can be a company director?",
+                "a": "<p>A director must be a natural person who is at least 18 years of age. They must not be an undischarged bankrupt or have been convicted of any offenses related to fraud or dishonesty. At least one director must be \"ordinarily resident\" in Malaysia.</p>",
+                "category": "Company Incorporation"
+            },
+            {
+                "q": "Is a local resident director required?",
+                "a": "<div class=\"space-y-4\"><p>Yes. Under the Companies Act 2016, every Sdn. Bhd. must have at least one director who is \"ordinarily resident in Malaysia\".</p><div><h4 class=\"font-semibold text-text-primary-light dark:text-text-primary-dark mb-2\">How to prove \"Ordinarily Resident\":</h4><ul class=\"list-disc pl-5 space-y-1\"><li><strong>For Malaysian Directors:</strong> The residential address stated in their NRIC is sufficient.</li><li><strong>For Foreign Directors:</strong> Must provide a valid long-term residence pass or work visa in Malaysia, along with proof of a local residential address, to show that Malaysia is their primary place of residence.</li></ul></div></div>",
+                "category": "Company Incorporation"
+            },
+            {
+                "q": "How many directors are required?",
+                "a": "<p>A Sdn. Bhd. requires a minimum of one director. This director can also be the sole shareholder of the company, making it easy to set up a one-person company.</p>",
+                "category": "Company Incorporation"
+            },
+            {
+                "q": "Can foreigners own a Malaysian company?",
+                "a": "<p>Yes, foreigners can own 100% of a Malaysian Sdn. Bhd. in most industries. However, the company must still fulfill the requirement of having at least one director who is ordinarily resident in Malaysia.</p>",
+                "category": "Company Incorporation"
+            },
+            {
+                "q": "What is the minimum share capital?",
+                "a": "<p>You can start a company with a share capital as low as RM1. However, we generally recommend a minimum of RM1,000 to facilitate bank account opening and meet initial operational needs.</p>",
+                "category": "Company Incorporation"
+            },
+            {
+                "q": "Can I convert my Enterprise into a Sdn. Bhd.?",
+                "a": "<p>While you cannot directly \"convert\" an enterprise or partnership, the standard procedure is to incorporate a new Sdn. Bhd. company and then transfer the business assets and operations from your old entity to the new one. We can guide you through this process.</p>",
+                "category": "Company Incorporation"
+            },
+            {
+                "q": "Do I need to appoint a company secretary?",
+                "a": "<p>Yes, it is a mandatory requirement under the Companies Act 2016. Every company must appoint at least one licensed company secretary within 30 days of its incorporation date. Our packages include this service.</p>",
+                "category": "Secretarial Services"
+            },
+            {
+                "q": "What are my annual compliance duties?",
+                "a": "<p>Every year, your company must prepare and file its Financial Statements and an Annual Return with the Companies Commission of Malaysia (SSM). Our secretarial services ensure these deadlines are tracked and met to avoid penalties.</p>",
+                "category": "Secretarial Services"
+            },
+            {
+                "q": "Is an annual audit required?",
+                "a": "<p>Not always. Small companies that meet certain criteria (such as low revenue, minimal assets, and few employees) may be exempted from audit. We can help you determine if your company qualifies for audit exemption.</p>",
+                "category": "Secretarial Services"
+            },
+            {
+                "q": "What is MBRS?",
+                "a": "<p>MBRS (Malaysian Business Reporting System) is an online submission platform based on the XBRL format. It is mandatory for filing Annual Returns and Financial Statements. We handle MBRS submissions as part of our annual compliance service.</p>",
+                "category": "Secretarial Services"
+            },
+            {
+                "q": "What payment methods do you accept?",
+                "a": "<p>We accept all major credit cards (Visa, MasterCard, American Express) as well as online bank transfers. All payments are processed securely.</p>",
+                "category": "Billing & Payments"
+            },
+            {
+                "q": "Do you provide a nominee director service?",
+                "a": "<p>Yes, we offer nominee director services to help you fulfill the statutory requirement for a local resident director. This service includes the necessary legal agreements. Please contact us for more details.</p>",
+                "category": "General"
+            },
+            {
+                "q": "When does my company need to file taxes?",
+                "a": "<p>A company is required to file its first tax return within 7 months of its financial year-end. Tax filing is mandatory even if the company is dormant or has not generated income.</p>",
+                "category": "General"
+            },
+            {
+                "q": "Can my company hire foreign employees?",
+                "a": "<p>Yes. Once your company is incorporated and meets specific paid-up capital requirements, it can apply for Employment Passes to hire foreign workers. We can provide assistance with this process.</p>",
+                "category": "General"
+            },
+            {
+                "q": "Do you provide post-incorporation support?",
+                "a": "<p>Absolutely. Our support doesn't end after registration. We offer ongoing secretarial services, compliance reminders, and expert advice to help you manage and grow your company effectively.</p>",
+                "category": "General"
+            }
+        ]
+    },
+    "blogPage": {
+        "hero": {
+            "badge": "VSG Insights",
+            "title": "Insights &",
+            "highlight": "News",
+            "subtitle": "Stay updated with the latest in corporate governance, compliance, and industry trends."
+        },
+        "searchPlaceholder": "Search articles...",
+        "loading": "Loading articles...",
+        "error": "Could not load blog posts. Please ensure your Contentful credentials are correct or try again later.",
+        "noResults": "No articles found matching your search.",
+        "readArticle": "Read Article",
+        "prev": "Prev",
+        "next": "Next",
+        "categoriesTitle": "Categories",
+        "recentPostsTitle": "Recent Posts",
+        "minRead": "5 min read"
+    },
+    "blogPostPage": {
+        "backToBlog": "Back to Blog",
+        "loading": "Loading post...",
+        "notFound": "Blog post not found."
+    }
+}

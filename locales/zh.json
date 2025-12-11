@@ -1,0 +1,1034 @@
+{
+    "header": {
+        "title": "VSG 秘书服务",
+        "home": "首页",
+        "incorporation": "公司注册",
+        "taxAccounting": "税务与会计",
+        "pricing": "价格",
+        "login": "登录",
+        "contactSync": "同步 ACRA",
+        "services": "服务",
+        "about": "关于我们",
+        "blog": "博客",
+        "faq": "常见问题",
+        "contact": "联系我们"
+    },
+    "hero": {
+        "title": "新加坡无缝企业服务",
+        "subtitle": "为您量身定制的专业秘书、会计和公司注册服务，助您业务增长。",
+        "cta": "开始",
+        "learnMore": "了解更多"
+    },
+    "incorporationPage": {
+        "hero": {
+            "title": "100% 在线公司注册",
+            "highlight": "无隐藏费用",
+            "subtitle": "在家即可完成 SSM 公司注册。我们处理繁琐文件，您专注业务发展。",
+            "cta": "立即注册",
+            "consultation": "预约咨询"
+        },
+        "features": {
+            "title": "为什么选择 VSG 秘书服务",
+            "subtitle": "我们通过专家支持简化注册流程，全程为您护航。",
+            "list": [
+                {
+                    "title": "专家指导",
+                    "text": "我们经验丰富的公司秘书团队确保合规并提供前瞻性建议。",
+                    "icon": "school"
+                },
+                {
+                    "title": "无缝在线流程",
+                    "text": "随时随地在线完成您的注册和秘书任务。",
+                    "icon": "laptop_mac"
+                },
+                {
+                    "title": "透明定价",
+                    "text": "无隐藏费用，所有服务明细清晰，价格具有竞争力。",
+                    "icon": "payments"
+                },
+                {
+                    "title": "专属支持",
+                    "text": "获得我们友好且知识渊博的客户支持团队的个性化协助。",
+                    "icon": "support_agent"
+                },
+                {
+                    "title": "高效快捷",
+                    "text": "利用科技手段，让您的企业设立和合规变得快速无忧。",
+                    "icon": "rocket_launch"
+                }
+            ]
+        },
+        "pricing": {
+            "title": "公司注册配套",
+            "description": "助您完成公司注册并准备运营的完整配套。",
+            "price": "RM1,499",
+            "origPrice": "RM1,800",
+            "cta": "立即注册",
+            "items": [
+                "包含 RM1,010 SSM 注册费",
+                "最多 3 次公司名称搜索及专家建议",
+                "完整文件准备及提交至 SSM",
+                "银行开户决议",
+                "跟进直至注册完成",
+                "任命持牌公司秘书（30天内）",
+                "24/7 在线访问文件",
+                "30天内免费更新一次",
+                "免费商业及股权咨询",
+                "股权众筹咨询",
+                "公司章程 / 投资意向书 / 股东协议 50% 折扣"
+            ]
+        },
+        "steps": {
+            "title": "仅需 4 步即可注册公司",
+            "list": [
+                {
+                    "num": 1,
+                    "title": "选择配套",
+                    "text": "选择最适合您业务需求的公司注册计划。"
+                },
+                {
+                    "num": 2,
+                    "title": "提交信息",
+                    "text": "填写我们的安全在线表格，提供您的公司和董事详细信息。"
+                },
+                {
+                    "num": 3,
+                    "title": "验证与提交",
+                    "text": "我们会核实您的文件并代表您向 SSM 提交申请。"
+                },
+                {
+                    "num": 4,
+                    "title": "接收文件",
+                    "text": "一旦获批，您将收到所有正式的公司注册电子文件。"
+                }
+            ]
+        },
+        "checklist": {
+            "title": "公司注册后：下一步是什么？",
+            "subtitle": "我们专注于公司秘书服务。对于其他专业服务，我们与值得信赖的供应商合作并可提供推荐。",
+            "boxTitle": "您的注册后清单",
+            "immediate": {
+                "title": "立即行动（首 30 天）",
+                "items": [
+                    {
+                        "item": "任命公司秘书",
+                        "desc": "我们提供此服务"
+                    },
+                    {
+                        "item": "开设公司银行账户",
+                        "desc": "我们准备文件"
+                    },
+                    {
+                        "item": "设立会计系统",
+                        "desc": "我们可以推荐合作伙伴"
+                    },
+                    {
+                        "item": "向税务局 (LHDN) 注册",
+                        "desc": "我们指导您"
+                    },
+                    {
+                        "item": "设立 EPF/SOCSO/EIS",
+                        "desc": "我们协助注册"
+                    }
+                ]
+            },
+            "ongoing": {
+                "title": "持续合规",
+                "items": [
+                    {
+                        "item": "每月",
+                        "desc": "记账、工资单、税务预估"
+                    },
+                    {
+                        "item": "每年",
+                        "desc": "财务报表、审计、报税"
+                    },
+                    {
+                        "item": "持续",
+                        "desc": "SSM 合规、执照更新"
+                    }
+                ]
+            }
+        },
+        "partner": {
+            "title": "为什么与 VSG 秘书服务合作？",
+            "text": "🎯 我们专注于企业合规。虽然我们不直接提供审计或会计服务，但我们在本职工作上精益求精。我们的专注确保您的企业保持合规和良好的治理。"
+        },
+        "faq": {
+            "title": "常见问题",
+            "subtitle": "关于我们服务的常见问题快速解答。",
+            "list": [
+                {
+                    "category": "Services",
+                    "question": "你们提供会计或审计服务吗？",
+                    "answer": "不，我们专注于公司秘书服务，以确保在合规和治理方面拥有最高水平的专业知识。但是，我们拥有一个值得信赖的合作伙伴网络，我们可以为您推荐会计、审计和税务方面的需求。"
+                },
+                {
+                    "category": "Services",
+                    "question": "秘书、会计和审计服务有什么区别？",
+                    "answer": "很简单：我们处理 SSM 申报，确保遵守公司法，并管理公司文件。会计师记录您的财务交易并编制财务报表。审计师独立核实这些财务报表。税务代理处理您的税务计算并向 LHDN 提交。"
+                },
+                {
+                    "category": "Services",
+                    "question": "你们能帮我找到可靠的服务提供商吗？",
+                    "answer": "当然可以！这是与我们合作的主要好处之一。我们维护着一个由值得信赖且经过审查的审计师、会计师和税务专业人士组成的网络。我们可以根据您的业务需求和预算进行介绍，为您节省时间和不确定性。"
+                },
+                {
+                    "category": "Costs",
+                    "question": "我应该为会计服务预算多少？",
+                    "answer": "对于大多数初创公司和小型企业，基本记账的典型预算在每月 RM300-800 之间。这会因您的公司交易量和复杂性而异。我们提供透明的成本指导，并可以为您联系符合您预算的合作伙伴。"
+                },
+                {
+                    "category": "Compliance",
+                    "question": "你们提供哪些具体的合规服务？",
+                    "answer": "我们管理您与马来西亚公司委员会 (SSM) 的所有要求。这包括提交年度申报表、准备年度股东大会会议记录、更新公司信息、管理实益拥有人登记、维护法定记录以及确保所有公司文件井然有序。"
+                }
+            ]
+        }
+    },
+    "incorporation": {
+        "title": "公司注册",
+        "subtitle": "轻松在新加坡开展业务。我们处理所有的文书工作。",
+        "steps": {
+            "step1": "提交详情",
+            "step2": "文件主要",
+            "step3": "提交",
+            "step4": "注册成功"
+        },
+        "calculator": {
+            "title": "预估费用计算器",
+            "revenue": "年收入",
+            "employees": "员工人数",
+            "calculate": "计算费用",
+            "estimatedFee": "预估年费"
+        }
+    },
+    "components": {
+        "feeCalculator": {
+            "title": "合规费用计算器",
+            "subtitle": "估算您的年度审计、税务和月度会计成本。",
+            "financialsTitle": "公司财务（估算）",
+            "totalAssets": "总资产 (RM)",
+            "totalRevenue": "总收入 (RM)",
+            "totalExpenses": "总支出 (RM)",
+            "note": "注意：费用是根据“财务水平”估算的，即您的总资产、收入或支出中的最高值。",
+            "estimatedFeesTitle": "预估专业费用",
+            "accounting": {
+                "title": "会计服务",
+                "subtitle": "每月估算",
+                "unit": "/ 月"
+            },
+            "audit": {
+                "title": "审计费",
+                "subtitle": "年度估算",
+                "surcharge": "专业服务附加费",
+                "total": "审计总额"
+            },
+            "tax": {
+                "title": "税务代理费",
+                "subtitle": "年度估算（合规）",
+                "surcharge": "专业服务附加费",
+                "total": "税务总额"
+            },
+            "disclaimer": "* 估算不包括 SST、垫付款项和复杂问题。最终报价可能会有所不同。",
+            "toBeAssessed": "待评估",
+            "contactForQuote": "联系报价"
+        }
+    },
+    "pricing": {
+        "title": "透明定价",
+        "subtitle": "无隐藏费用。选择适合您需求的计划。",
+        "plans": {
+            "basic": "基础版",
+            "pro": "专业版",
+            "enterprise": "企业版"
+        }
+    },
+    "homePage": {
+        "hero": {
+            "badge": "马来西亚排名第一的公司秘书",
+            "title": "企业秘书服务",
+            "highlight": "化繁为简",
+            "subtitle": "您在马来西亚公司注册、治理和合规方面值得信赖的合作伙伴。专注于您的业务，剩下的交给我们。",
+            "cta": "立即开始",
+            "services": "我们的服务"
+        },
+        "trust": {
+            "registered": "注册公司",
+            "fast": "快速注册",
+            "satisfaction": "客户满意度",
+            "experience": "综合经验"
+        },
+        "whyChoose": {
+            "title": "为何与 VSG 秘书服务合作？",
+            "subtitle": "我们简化合规流程，让您可以专注于增长。",
+            "expert": {
+                "title": "专家团队",
+                "text": "我们的持牌专业人士根据您的业务需求提供准确、可靠的指导。"
+            },
+            "efficient": {
+                "title": "高效流程",
+                "text": "利用科技手段，我们简化了注册和合规流程，为您节省时间和精力。"
+            },
+            "transparent": {
+                "title": "透明定价",
+                "text": "无隐藏费用。我们清晰、预先的定价确保您确切知道您支付的费用。"
+            }
+        },
+        "testimonials": {
+            "title": "客户评价",
+            "subtitle": "我们要赢得了马来西亚各企业的信任。",
+            "list": [
+                {
+                    "quote": "VSG 秘书服务让整个公司注册过程变得无缝且无压力。他们的团队专业、反应迅速且知识渊博。强烈推荐！",
+                    "name": "Ahmad Zulkifli",
+                    "title": "创始人, TechNova Solutions"
+                },
+                {
+                    "quote": "转而使用 VSG 的秘书服务是我们做出的最佳决定。他们高效地处理我们所有的合规需求，使我们能够完全专注于运营。",
+                    "name": "Chen Wei Ling",
+                    "title": "CEO, Urban Bites Cafe"
+                },
+                {
+                    "quote": "VSG 的专业知识和指导非常宝贵。他们不仅仅是服务提供商；他们是我们公司成长和真正的合作伙伴。",
+                    "name": "Suresh Ramachandran",
+                    "title": "董事总经理, Global Exports Sdn Bhd"
+                }
+            ]
+        },
+        "cta": {
+            "title": "准备好开始并发展您的业务了吗？",
+            "text": "让我们处理复杂的公司治理和合规问题。立即联系我们进行个性化咨询。",
+            "button": "预约免费咨询"
+        }
+    },
+    "pricingPage": {
+        "hero": {
+            "badge": "透明定价",
+            "title": "清晰且简单",
+            "highlight": "助力增长的定价",
+            "subtitle": "找到适合您业务的计划。绝无隐藏费用。我们坚信透明度并从第一天起就提供价值。",
+            "guarantee": "30 天退款保证"
+        },
+        "oneTime": {
+            "title": "一次性费用",
+            "badge": "全包配套",
+            "price": "RM1899",
+            "desc": "公司注册的一次性费用。",
+            "featuresTitle": "在马来西亚启动业务所需的一切：",
+            "features": [
+                "公司名称注册",
+                "包含 SSM 申报费",
+                "1 套银行开户决议",
+                "首份董事决议",
+                "24/7 访问客户门户"
+            ],
+            "cta": "立即注册"
+        },
+        "ongoing": {
+            "title": "持续秘书服务",
+            "subtitle": "通过我们无忧的年度计划保持您的公司合规。",
+            "basic": {
+                "title": "基础版",
+                "desc": "保持合规的基本服务。",
+                "price": "RM89",
+                "unit": "/ 月",
+                "cta": "选择基础版"
+            },
+            "annual": {
+                "badge": "最受欢迎",
+                "title": "年度配套",
+                "desc": "长期高枕无忧的最佳价值。",
+                "price": "RM1500",
+                "unit": "/ 年",
+                "cta": "选择年度配套"
+            }
+        },
+        "adhoc": {
+            "title": "临时服务与费率",
+            "subtitle": "需要特定的服务？我们提供广泛的临时服务。联系我们获取个性化报价。",
+            "list": [
+                {
+                    "category": "年度申报服务",
+                    "icon": "event_note",
+                    "services": [
+                        {
+                            "name": "年度申报表提交",
+                            "price": "400",
+                            "notes": "包含 5 名董事/股东，每增加一名 +50（不含 SSM 费用）"
+                        },
+                        {
+                            "name": "未经审计/经审计财务报表提交",
+                            "price": "300",
+                            "notes": "不含 SSM 申报费和在线数据输入"
+                        },
+                        {
+                            "name": "实益拥有人 (BO) 提交/更新",
+                            "price": "300",
+                            "notes": "最多 3 名受益人，每增加一名 +100"
+                        },
+                        {
+                            "name": "年度申报 SSM 费用",
+                            "price": "200",
+                            "notes": "政府申报费"
+                        }
+                    ]
+                },
+                {
+                    "category": "公司信息变更",
+                    "icon": "change_circle",
+                    "services": [
+                        {
+                            "name": "更改营业/分支机构地址",
+                            "price": "100",
+                            "notes": "每次"
+                        },
+                        {
+                            "name": "公司名称保留",
+                            "price": "100",
+                            "notes": "每次（含 SSM 费用）"
+                        },
+                        {
+                            "name": "更改会计记录地址",
+                            "price": "100",
+                            "notes": "每次"
+                        },
+                        {
+                            "name": "更改公司名称",
+                            "price": "400",
+                            "notes": "含 SSM 费用"
+                        },
+                        {
+                            "name": "申请 EPC（豁免私人公司）",
+                            "price": "800",
+                            "notes": "含 SSM 费用"
+                        },
+                        {
+                            "name": "更改业务性质",
+                            "price": "250",
+                            "notes": ""
+                        }
+                    ]
+                },
+                {
+                    "category": "公司章程与股本",
+                    "icon": "account_balance",
+                    "services": [
+                        {
+                            "name": "准备投资意向书",
+                            "price": "1,500 起",
+                            "notes": "起草关键投资条款"
+                        },
+                        {
+                            "name": "准备股东协议",
+                            "price": "3,000 起",
+                            "notes": "针对权利和保护的定制协议"
+                        },
+                        {
+                            "name": "准备公司章程",
+                            "price": "2,000 起",
+                            "notes": "起草公司管理规则"
+                        },
+                        {
+                            "name": "采纳公司章程",
+                            "price": "100",
+                            "notes": ""
+                        },
+                        {
+                            "name": "修订/废除组织大纲和章程 (M&A)",
+                            "price": "500",
+                            "notes": "含 SSM 费用"
+                        },
+                        {
+                            "name": "股份分配（前 3 次分配）",
+                            "price": "300",
+                            "notes": "每增加一次分配 +50，仅限现有股东"
+                        },
+                        {
+                            "name": "股份转让",
+                            "price": "300/次",
+                            "notes": "不含印花税"
+                        },
+                        {
+                            "name": "资本减少/转换/股份拆分",
+                            "price": "1,000 起",
+                            "notes": ""
+                        }
+                    ]
+                },
+                {
+                    "category": "董事与股东",
+                    "icon": "groups",
+                    "services": [
+                        {
+                            "name": "更新董事/股东详情",
+                            "price": "100",
+                            "notes": "每次"
+                        },
+                        {
+                            "name": "任命企业代表及授权代表",
+                            "price": "200",
+                            "notes": ""
+                        },
+                        {
+                            "name": "任命董事",
+                            "price": "100",
+                            "notes": "每次"
+                        },
+                        {
+                            "name": "董事辞职",
+                            "price": "100",
+                            "notes": "每次"
+                        },
+                        {
+                            "name": "罢免董事",
+                            "price": "200",
+                            "notes": "不含会议/通知费用"
+                        },
+                        {
+                            "name": "更新 BO 详情",
+                            "price": "50",
+                            "notes": "每名受益人"
+                        },
+                        {
+                            "name": "停止为 BO",
+                            "price": "50",
+                            "notes": "每名受益人"
+                        }
+                    ]
+                },
+                {
+                    "category": "审计师、税务代理与财政年度",
+                    "icon": "monitoring",
+                    "services": [
+                        {
+                            "name": "确定首个财政年度及任命审计师/税务代理",
+                            "price": "200",
+                            "notes": ""
+                        },
+                        {
+                            "name": "更换审计师",
+                            "price": "150",
+                            "notes": ""
+                        },
+                        {
+                            "name": "更换税务代理",
+                            "price": "100",
+                            "notes": ""
+                        },
+                        {
+                            "name": "更改财政年度",
+                            "price": "150",
+                            "notes": ""
+                        },
+                        {
+                            "name": "延长财务报表提时间 (EOT)",
+                            "price": "350",
+                            "notes": "含 SSM 费用"
+                        }
+                    ]
+                },
+                {
+                    "category": "股息、决议与认证",
+                    "icon": "payments",
+                    "services": [
+                        {
+                            "name": "股息宣派",
+                            "price": "300",
+                            "notes": "首次，随后每次 +50"
+                        },
+                        {
+                            "name": "购买 SSM 资料/表格",
+                            "price": "50",
+                            "notes": "含 SSM 费用"
+                        },
+                        {
+                            "name": "银行决议（开设/关闭/更改签字人）",
+                            "price": "150/账户",
+                            "notes": "含 CTC"
+                        },
+                        {
+                            "name": "认证副本 (CTC) 文件",
+                            "price": "5",
+                            "notes": "每份"
+                        }
+                    ]
+                },
+                {
+                    "category": "会议、递送及杂项",
+                    "icon": "local_shipping",
+                    "services": [
+                        {
+                            "name": "秘书出席会议",
+                            "price": "700 /天",
+                            "notes": "AGM / EGM"
+                        },
+                        {
+                            "name": "处理办公室外事务",
+                            "price": "300/小时/人",
+                            "notes": "除 AGM / EGM 外，不含差旅费"
+                        },
+                        {
+                            "name": "快递服务",
+                            "price": "10",
+                            "notes": "+ 运费"
+                        },
+                        {
+                            "name": "即时递送",
+                            "price": "50 起",
+                            "notes": "+ 运费"
+                        },
+                        {
+                            "name": "虚拟办公地址（邮件通知与扫描）",
+                            "price": "1,800/年",
+                            "notes": ""
+                        }
+                    ]
+                },
+                {
+                    "category": "终止、注销与清盘",
+                    "icon": "cancel",
+                    "services": [
+                        {
+                            "name": "注销申请（休眠公司）",
+                            "price": "3,000 起",
+                            "notes": "不含 SSM 费用"
+                        },
+                        {
+                            "name": "成员自愿清盘",
+                            "price": "10,000 起",
+                            "notes": ""
+                        }
+                    ]
+                },
+                {
+                    "category": "商业与企业服务",
+                    "icon": "business_center",
+                    "services": [
+                        {
+                            "name": "LLP 注册",
+                            "price": "1,888",
+                            "notes": "含 SSM 费用，完整注册配套"
+                        },
+                        {
+                            "name": "营业执照",
+                            "price": "报价",
+                            "notes": "提供各类执照"
+                        },
+                        {
+                            "name": "会计与记账",
+                            "price": "报价",
+                            "notes": "休眠：800，每月：1,800"
+                        },
+                        {
+                            "name": "报税",
+                            "price": "1,500 起",
+                            "notes": "企业税务准备"
+                        },
+                        {
+                            "name": "审计",
+                            "price": "1,500 起/份",
+                            "notes": "专业审计服务"
+                        },
+                        {
+                            "name": "就业准证（外籍人士）",
+                            "price": "10,000 起",
+                            "notes": "完整 EP 申请"
+                        },
+                        {
+                            "name": "人力资源与就业",
+                            "price": "1,500 起",
+                            "notes": "HR 咨询与设立"
+                        },
+                        {
+                            "name": "薪资外包",
+                            "price": "80 起",
+                            "notes": "每人头，月度管理"
+                        },
+                        {
+                            "name": "商标注册",
+                            "price": "报价",
+                            "notes": "知识产权保护"
+                        },
+                        {
+                            "name": "企业网站",
+                            "price": "4,500 起",
+                            "notes": "专业网站开发"
+                        }
+                    ]
+                },
+                {
+                    "category": "其他服务",
+                    "icon": "build_circle",
+                    "services": [
+                        {
+                            "name": "确认信 – 无公司章程",
+                            "price": "100",
+                            "notes": ""
+                        },
+                        {
+                            "name": "确认信（通用）",
+                            "price": "150 起",
+                            "notes": ""
+                        },
+                        {
+                            "name": "自墨橡皮章",
+                            "price": "100/个",
+                            "notes": ""
+                        },
+                        {
+                            "name": "钢印 (ø38mm)",
+                            "price": "100 起",
+                            "notes": ""
+                        },
+                        {
+                            "name": "其他决议/信函准备",
+                            "price": "100/封",
+                            "notes": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        "terms": {
+            "title": "条款和条件",
+            "list": [
+                "<strong>税费：</strong> 所有政府费用、代理费和垫付款项（如印刷、快递、文具）均由客户承担。",
+                "<strong>付款条款：</strong> 需在发票日期起 7 天内付款。逾期付款可能会收取每月 1.5% 的利息（按日计算）。",
+                "<strong>周转时间：</strong> 正常服务为 3-7 个工作日。紧急请求可在 1-2 个工作日内处理，每项请求需收取 RM150 加急费。",
+                "<strong>保密性：</strong> 所有客户信息将保密，除非法律、法规或法院命令要求披露。",
+                "<strong>责任限制：</strong> 我们对任何索赔的责任不超过客户为引起索赔的具体服务支付的总费用。我们不对间接或后果性损害负责。",
+                "<strong>适用法律：</strong> 这些条款受马来西亚法律管辖，争议应在马来西亚法院解决。"
+            ]
+        },
+        "disclaimers": {
+            "title": "免责声明",
+            "list": [
+                "建议和推荐仅基于客户提供的信息。",
+                "客户对基于我们的建议或推荐做出的所有商业决策负责。",
+                "我们的服务仅限于发票/聘用书中概述的约定范围。任何额外服务都需要单独协议，并可能产生额外费用。",
+                "我们不保证获得当局批准，也不保证免除因监管不合规而产生的罚款或处罚。"
+            ]
+        },
+        "note": {
+            "title": "请注意",
+            "list": [
+                "列出的所有专业费用不包括政府/机构收费（例如 SSM、LHDN、地方议会）。",
+                "费用可能因复杂性而异；额外费用将提前沟通并达成一致。",
+                "除非另有说明，否则快递、印刷和盖章等垫付款项将单独计费。"
+            ]
+        }
+    },
+    "servicesPage": {
+        "hero": {
+            "badge": "服务",
+            "title": "全面",
+            "highlight": "企业解决方案",
+            "subtitle": "我们提供全面的虚拟、秘书及治理解决方案，确保您的业务平稳运行并符合所有监管要求。"
+        },
+        "secretarial": {
+            "title": "公司秘书服务",
+            "items": [
+                {
+                    "title": "董事会会议支持",
+                    "content": "全面的董事会会议支持，包括议程准备、董事会资料分发及出席会议。",
+                    "subtext": "为何重要：确保会议卓有成效，决策得到良好记录，并履行董事职责。"
+                },
+                {
+                    "title": "法定申报",
+                    "content": "确保及时准确地向 SSM 提交所有必需的法定文件（如年度申报表）。",
+                    "subtext": "为何重要：避免逾期罚款，并保持您公司在监管机构的良好声誉。"
+                },
+                {
+                    "title": "会议记录",
+                    "content": "专业精准的会议记录服务，准确记录讨论和决策。",
+                    "subtext": "案例研究：一家科技初创公司通过外包会议记录给我们，每月节省了 10+ 小时的高管时间。"
+                }
+            ]
+        },
+        "governance": {
+            "title": "公司治理",
+            "items": [
+                {
+                    "title": "政策制定",
+                    "content": "协助起草、审查和实施公司政策，确保最佳实践。",
+                    "subtext": "为何重要：建立强大的道德框架并降低运营风险。"
+                },
+                {
+                    "title": "治理审计",
+                    "content": "对您的治理结构进行彻底审计，以识别改进领域并确保合规。",
+                    "subtext": "为何重要：在法律或财务问题发生前主动识别薄弱环节。"
+                },
+                {
+                    "title": "董事培训",
+                    "content": "为董事提供关于其职责、责任和公司治理的定制培训课程。",
+                    "subtext": "为何重要：赋予您的领导层知识，以做出明智、合规的决策。"
+                }
+            ]
+        },
+        "compliance": {
+            "title": "合规管理",
+            "items": [
+                {
+                    "title": "MBRS & 监管报告",
+                    "content": "代表您管理并提交所有必要的 MBRS 和监管报告，确保准确性和及时性。",
+                    "subtext": "为何重要：正确导航复杂的 MBRS 系统，为您节省时间并防止错误。"
+                },
+                {
+                    "title": "合规框架",
+                    "content": "开发和实施适合您行业和业务需求的稳健合规框架。",
+                    "subtext": "为何重要：建立系统的法律和监管义务管理方法。"
+                },
+                {
+                    "title": "风险评估",
+                    "content": "识别、评估和缓解潜在的合规风险，以保护您的商业声誉和财务。",
+                    "subtext": "为何重要：一种主动策略，保护您的公司免受不可预见的合规问题影响。"
+                }
+            ]
+        },
+        "cta": {
+            "title": "准备好简化您的治理了吗？",
+            "text": "让我们处理复杂的公司治理和合规问题，这样您就可以专注于您最擅长的事情。立即联系我们进行个性化咨询。",
+            "button": "预约免费咨询"
+        }
+    },
+    "aboutPage": {
+        "hero": {
+            "badge": "关于 VSG 秘书服务",
+            "title": "您值得信赖的合作伙伴",
+            "highlight": "公司治理",
+            "subtitle": "我们提供专家的虚拟秘书和治理服务，以确保您的公司高效、诚信且完全合规地运营。"
+        },
+        "mission": {
+            "title": "我们的使命",
+            "list": [
+                "通过创新和数字解决方案简化企业合规。",
+                "提供准确、及时且透明的公司秘书服务。",
+                "以专业的治理指导支持企业家和中小企业。"
+            ]
+        },
+        "vision": {
+            "title": "我们的愿景",
+            "text": "成为马来西亚最值得信赖和技术驱动的公司秘书事务所，使企业能够轻松保持合规，同时专注于增长。"
+        },
+        "story": {
+            "title": "我们的故事",
+            "p1": "VSG 秘书服务成立于 2024 年 6 月 1 日，旨在实现明确的使命——使马来西亚企业的公司秘书和合规服务更易获得、更透明且更高效。",
+            "p2": "我们了解企业家在管理治理和法定义务方面面临的挑战，因此我们建立了一个融合专业知识与数字便利性的系统。",
+            "p3": "在短时间内，我们已支持数十家公司进行注册、合规和报告，通过信任、可靠和创新迅速发展。我们的故事才刚刚开始。"
+        },
+        "milestones": {
+            "title": "里程碑",
+            "list": [
+                {
+                    "year": "2024",
+                    "event": "VSG 秘书服务于 2024 年 6 月 1 日成立。"
+                },
+                {
+                    "year": "2025",
+                    "event": "2025 年 2 月注册了我们的第 50 家公司。"
+                }
+            ]
+        },
+        "commitment": {
+            "title": "我们的承诺",
+            "licensedTitle": "持有执照与认证",
+            "text1": "我们是在马来西亚公司委员会 (SSM) 注册的持牌公司秘书事务所，确保我们的服务达到公司治理和合规的最高标准。",
+            "text2": "我们的团队由拥有深厚公司法、治理和监管申报经验的合格认证专业人士组成。"
+        },
+        "team": {
+            "badge": "领导层",
+            "title": "认识团队",
+            "subtitle": "我们的力量在于我们经验丰富且敬业的专业人士。",
+            "members": [
+                {
+                    "name": "Sheng Hong",
+                    "title": "首席执行官",
+                    "bio": "Sheng Hong 负责 VSG 的整体运营、战略、销售和市场营销。在创立 VSG 之前，他在 Syarikat Ong 工作了五年多，积累了深厚的公司秘书实践专业知识，并在 pitchIN 担任了三年的投资分析师，磨练了他在初创企业投资和公司治理方面的技能。"
+                },
+                {
+                    "name": "Philip George",
+                    "title": "联合创始人",
+                    "bio": "Philip 推动 VSG 的技术、增长和融资。在加入 VSG 之前，他联合创立了涵盖医疗保健、房地产和旅游业的多家科技企业，在扩展技术驱动型业务和产品创新方面拥有广泛的经验。"
+                },
+                {
+                    "name": "Lam Yao Xiang",
+                    "title": "公司秘书",
+                    "bio": "Lam Yao Xiang 是 MAISCA 旗下的 SSM 持牌执业公司秘书。他在 Boardroom 和 Syarikat Ong 任职期间积累了丰富的公司治理和合规经验，支持公司达到监管标准和最佳实践。"
+                },
+                {
+                    "name": "Lau Jun Yan",
+                    "title": "市场营销主管",
+                    "bio": "Lau Jun Yan 负责 VSG 秘书服务的市场战略和数字增长。在加入 VSG 之前，他联合创立并管理了自己的营销代理公司，领导着一个五人团队。他在数字营销方面拥有丰富的经验，包括 Facebook 和 Google 广告、活动优化以及小红书等平台的社交媒体管理。"
+                }
+            ]
+        },
+        "cta": {
+            "title": "准备好简化您的治理了吗？",
+            "text": "让我们讨论 VSG 秘书服务如何支持您的公司成功。立即联系我们的团队进行免费咨询。",
+            "button": "取得联系"
+        }
+    },
+    "contactPage": {
+        "hero": {
+            "badge": "联系我们",
+            "title": "取得",
+            "highlight": "联系",
+            "subtitle": "我们很高兴听到您的声音。我们通常在 2 个工作小时内回复。"
+        },
+        "form": {
+            "name": "姓名",
+            "namePlaceholder": "输入您的全名",
+            "email": "电子邮箱",
+            "emailPlaceholder": "输入您的电子邮箱地址",
+            "subject": "主题",
+            "subjectPlaceholder": "您的信息关于什么？",
+            "message": "留言",
+            "messagePlaceholder": "在此写下您的留言...",
+            "button": "发送信息",
+            "sending": "发送中..."
+        },
+        "info": {
+            "title": "联系信息",
+            "email": "电子邮箱",
+            "phone": "电话",
+            "office": "办公室",
+            "address": "33-01-13A, 33rd Floor, Menara Keck Seng, 203, Jalan Bukit Bintang, 55100 Kuala Lumpur, W.P. Kuala Lumpur, Malaysia"
+        }
+    },
+    "faqPage": {
+        "hero": {
+            "badge": "帮助与支持",
+            "title": "常见",
+            "highlight": "问题",
+            "subtitle": "有问题？我们在这里为您提供帮助。在下方查找常见问题的解答。"
+        },
+        "cta": {
+            "title": "找不到答案？",
+            "text": "我们的团队随时准备为您提供帮助。我们在 2 个工作小时内回复。",
+            "button": "联系我们"
+        },
+        "categories": {
+            "All": "全部",
+            "Company Incorporation": "公司注册",
+            "Secretarial Services": "秘书服务",
+            "Billing & Payments": "账单与支付",
+            "General": "综合"
+        },
+        "items": [
+            {
+                "q": "什么是“Sdn. Bhd.”公司？",
+                "a": "<p>“Sdn. Bhd.” (Sendirian Berhad) 是马来西亚的一种私人有限公司。它被视为与其所有者分离的独立法律实体，这意味着它可以拥有财产、签订合同并被起诉。主要好处是股东的责任仅限于其在股份中的投资金额。</p>",
+                "category": "Company Incorporation"
+            },
+            {
+                "q": "注册需要多长时间？",
+                "a": "<p>注册过程通常需要 3-7 个工作日。此时限取决于马来西亚公司委员会 (SSM) 的处理速度和批准情况。</p>",
+                "category": "Company Incorporation"
+            },
+            {
+                "q": "我需要什么才能开始？",
+                "a": "<div class=\"space-y-4\"><p>首先，您需要提供以下内容：</p><ul class=\"list-disc pl-5 space-y-1\"><li>建议的公司名称（至少 3 个选项）。</li><li>主要业务活动的描述。</li><li>所有董事和股东的身份证明和地址文件。</li></ul><p class=\"mt-4 font-semibold\">文件清单：</p><div><h4 class=\"font-semibold text-text-primary-light dark:text-text-primary-dark mb-2\">1. 身份验证</h4><ul class=\"list-disc pl-5 space-y-1\"><li><strong>马来西亚公民：</strong> 身份证正反面复印件。</li><li><strong>外国公民：</strong> 护照信息页清晰复印件。</li></ul></div><div><h4 class=\"font-semibold text-text-primary-light dark:text-text-primary-dark mb-2\">2. 居住地址证明</h4><ul class=\"list-disc pl-5 space-y-1\"><li><strong>马来西亚人和外国人：</strong> 显示您全名和居住地址的最近个人银行对账单或水电费单。</li></ul><p class=\"mt-2 text-xs italic\">注意：如果您当前的地址与您的身份证件不同，请提供额外的居住证明。</p></div><div><h4 class=\"font-semibold text-text-primary-light dark:text-text-primary-dark mb-2\">3. 在线身份验证</h4><p>将安排一次简短的在线会议（例如 Zoom）进行身份验证，您需要出示您的身份证/护照原件。</p></div></div>",
+                "category": "Company Incorporation"
+            },
+            {
+                "q": "谁可以担任公司董事？",
+                "a": "<p>董事必须是年满 18 岁的自然人。他们不得是未获解除破产人士或被判有欺诈或不诚实相关罪行。至少有一名董事必须“通常居住”在马来西亚。</p>",
+                "category": "Company Incorporation"
+            },
+            {
+                "q": "是否需要本地居民董事？",
+                "a": "<div class=\"space-y-4\"><p>是的。根据2016年公司法，每家 Sdn. Bhd. 必须至少有一名“通常居住在马来西亚”的董事。</p><div><h4 class=\"font-semibold text-text-primary-light dark:text-text-primary-dark mb-2\">如何证明“通常居住”：</h4><ul class=\"list-disc pl-5 space-y-1\"><li><strong>对于马来西亚董事：</strong> 身份证上注明的居住地址即足够。</li><li><strong>对于外籍董事：</strong> 必须提供有效的马来西亚长期居留准证或工作签证，以及本地居住地址证明，以证明马来西亚是其主要居住地。</li></ul></div></div>",
+                "category": "Company Incorporation"
+            },
+            {
+                "q": "需要多少名董事？",
+                "a": "<p>Sdn. Bhd. 至少需要一名董事。该董事也可以是公司的唯一股东，这使得设立一人公司变得容易。</p>",
+                "category": "Company Incorporation"
+            },
+            {
+                "q": "外国人可以拥有马来西亚公司吗？",
+                "a": "<p>是的，外国人可以在大多数行业拥有 100% 的马来西亚 Sdn. Bhd.。但是，公司仍必须满足至少有一名通常居住在马来西亚的董事的要求。</p>",
+                "category": "Company Incorporation"
+            },
+            {
+                "q": "最低股本是多少？",
+                "a": "<p>您可以以低至 RM1 的股本创办公司。但是，我们通常建议最低 RM1,000 以方便开设银行账户并满足初始运营需求。</p>",
+                "category": "Company Incorporation"
+            },
+            {
+                "q": "我可以将我的企业转换为 Sdn. Bhd. 吗？",
+                "a": "<p>虽然您不能直接“转换”企业或合伙企业，但标准程序是注册一家新的 Sdn. Bhd. 公司，然后将旧实体的业务资产和运营转移到新实体。我们可以指导您完成此过程。</p>",
+                "category": "Company Incorporation"
+            },
+            {
+                "q": "我需要任命公司秘书吗？",
+                "a": "<p>是的，这是2016年公司法的强制性要求。每家公司必须在注册成立之日起 30 天内任命至少一名持牌公司秘书。我们的配套包含此服务。</p>",
+                "category": "Secretarial Services"
+            },
+            {
+                "q": "我的年度合规职责是什么？",
+                "a": "<p>每年，您的公司必须准备并向马来西亚公司委员会 (SSM) 提交其财务报表和年度申报表。我们的秘书服务确保跟踪并满足这些截止日期，以避免罚款。</p>",
+                "category": "Secretarial Services"
+            },
+            {
+                "q": "是否需要年度审计？",
+                "a": "<p>不一定。符合特定标准（如低收入、资产极少和员工人数少）的小型公司可以免于审计。我们可以帮助您确定您的公司是否有资格获得审计豁免。</p>",
+                "category": "Secretarial Services"
+            },
+            {
+                "q": "什么是 MBRS？",
+                "a": "<p>MBRS（马来西亚商业报告系统）是基于 XBRL 格式的在线提交平台。它是提交年度申报表和财务报表的强制性要求。作为我们年度合规服务的一部分，我们处理 MBRS 提交。</p>",
+                "category": "Secretarial Services"
+            },
+            {
+                "q": "你们接受什么付款方式？",
+                "a": "<p>我们接受所有主要的信用卡（Visa, MasterCard, American Express）以及在线银行转账。所有付款都经过安全处理。</p>",
+                "category": "Billing & Payments"
+            },
+            {
+                "q": "你们提供挂名董事服务吗？",
+                "a": "<p>是的，我们提供挂名董事服务，以帮助您满足本地居民董事的法定要求。此服务包括必要的法律协议。请联系我们了解更多详情。</p>",
+                "category": "General"
+            },
+            {
+                "q": "我的公司何时需要报税？",
+                "a": "<p>公司必须在其财政年度结束后的 7 个月内提交首次纳税申报表。即使公司处于休眠状态或没有产生收入，也必须进行税务申报。</p>",
+                "category": "General"
+            },
+            {
+                "q": "我的公司可以雇用外籍员工吗？",
+                "a": "<p>可以。一旦您的公司注册成立并满足特定的实缴资本要求，它可以申请就业准证以雇用外籍工人。我们可以提供此过程的协助。</p>",
+                "category": "General"
+            },
+            {
+                "q": "你们提供注册后支持吗？",
+                "a": "<p>绝对提供。我们的支持不会在注册后结束。我们提供持续的秘书服务、合规提醒和专家建议，以帮助您有效地管理和发展您的公司。</p>",
+                "category": "General"
+            }
+        ]
+    },
+    "blogPage": {
+        "hero": {
+            "badge": "VSG 洞察",
+            "title": "洞察与",
+            "highlight": "新闻",
+            "subtitle": "随时了解最新的公司治理、合规和行业趋势。"
+        },
+        "searchPlaceholder": "搜索文章...",
+        "loading": "正在加载文章...",
+        "error": "无法加载博客文章。请确保您的 Contentful 凭据正确或稍后再试。",
+        "noResults": "未找到符合您搜索的文章。",
+        "readArticle": "阅读文章",
+        "prev": "上一页",
+        "next": "下一页",
+        "categoriesTitle": "分类",
+        "recentPostsTitle": "最近文章",
+        "minRead": "5 分钟阅读"
+    },
+    "blogPostPage": {
+        "backToBlog": "返回博客",
+        "loading": "正在加载文章...",
+        "notFound": "未找到博客文章。"
+    }
+}

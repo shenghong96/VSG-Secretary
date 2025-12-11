@@ -1,7 +1,8 @@
-
 import React, { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const FeeCalculator = () => {
+    const { t } = useTranslation();
     const [revenue, setRevenue] = useState<number | ''>('');
     const [assets, setAssets] = useState<number | ''>('');
     const [expenses, setExpenses] = useState<number | ''>('');
@@ -83,26 +84,26 @@ const FeeCalculator = () => {
         calculateFees();
     }, [revenue, assets, expenses]);
 
-    const formatCurrency = (val: number) => val === 0 ? 'To be assessed' : `RM${val.toLocaleString()}`;
-    const formatTotal = (val: number) => val === 0 ? 'Contact for Quote' : `RM${val.toLocaleString()}`;
+    const formatCurrency = (val: number) => val === 0 ? t('components.feeCalculator.toBeAssessed') : `RM${val.toLocaleString()}`;
+    const formatTotal = (val: number) => val === 0 ? t('components.feeCalculator.contactForQuote') : `RM${val.toLocaleString()}`;
 
     return (
         <div className="bg-white dark:bg-slate-800 rounded-2xl shadow-lg border border-slate-200 dark:border-slate-700 overflow-hidden">
             <div className="p-6 bg-slate-900 text-white">
                 <h3 className="text-xl font-bold flex items-center gap-2">
                     <span className="material-symbols-outlined text-primary">calculate</span>
-                    Compliance Fee Calculator
+                    {t('components.feeCalculator.title')}
                 </h3>
-                <p className="text-slate-400 text-sm mt-1">Estimate your annual audit, tax, and monthly accounting costs.</p>
+                <p className="text-slate-400 text-sm mt-1">{t('components.feeCalculator.subtitle')}</p>
             </div>
 
             <div className="p-6 grid grid-cols-1 md:grid-cols-2 gap-8">
                 {/* Inputs */}
                 <div className="space-y-4">
-                    <h4 className="font-bold text-slate-900 dark:text-white mb-4">Company Financials (Estimates)</h4>
+                    <h4 className="font-bold text-slate-900 dark:text-white mb-4">{t('components.feeCalculator.financialsTitle')}</h4>
 
                     <div>
-                        <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">Total Assets (RM)</label>
+                        <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">{t('components.feeCalculator.totalAssets')}</label>
                         <input
                             type="number"
                             value={assets}
@@ -112,7 +113,7 @@ const FeeCalculator = () => {
                         />
                     </div>
                     <div>
-                        <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">Total Revenue (RM)</label>
+                        <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">{t('components.feeCalculator.totalRevenue')}</label>
                         <input
                             type="number"
                             value={revenue}
@@ -122,7 +123,7 @@ const FeeCalculator = () => {
                         />
                     </div>
                     <div>
-                        <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">Total Expenses (RM)</label>
+                        <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">{t('components.feeCalculator.totalExpenses')}</label>
                         <input
                             type="number"
                             value={expenses}
@@ -134,24 +135,24 @@ const FeeCalculator = () => {
 
                     <div className="pt-4">
                         <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg text-xs text-slate-600 dark:text-slate-400">
-                            <p><strong>Note:</strong> Fees are estimated based on the "Financial Level" which is the highest of your Total Assets, Revenue, or Expenses.</p>
+                            <p>{t('components.feeCalculator.note')}</p>
                         </div>
                     </div>
                 </div>
 
                 {/* Results */}
                 <div className="space-y-6">
-                    <h4 className="font-bold text-slate-900 dark:text-white mb-4">Estimated Professional Fees</h4>
+                    <h4 className="font-bold text-slate-900 dark:text-white mb-4">{t('components.feeCalculator.estimatedFeesTitle')}</h4>
 
                     {/* Accounting */}
                     <div className="flex justify-between items-center p-4 rounded-xl bg-slate-50 dark:bg-slate-700/50 border border-slate-100 dark:border-slate-700">
                         <div>
-                            <p className="font-bold text-slate-900 dark:text-white">Accounting Services</p>
-                            <p className="text-xs text-slate-500">Monthly Estimate</p>
+                            <p className="font-bold text-slate-900 dark:text-white">{t('components.feeCalculator.accounting.title')}</p>
+                            <p className="text-xs text-slate-500">{t('components.feeCalculator.accounting.subtitle')}</p>
                         </div>
                         <div className="text-right">
                             <p className="text-lg font-bold text-primary">{accountingFeeRange}</p>
-                            <p className="text-xs text-slate-500">/ month</p>
+                            <p className="text-xs text-slate-500">{t('components.feeCalculator.accounting.unit')}</p>
                         </div>
                     </div>
 
@@ -159,8 +160,8 @@ const FeeCalculator = () => {
                     <div className="p-4 rounded-xl bg-slate-50 dark:bg-slate-700/50 border border-slate-100 dark:border-slate-700">
                         <div className="flex justify-between items-center mb-2">
                             <div>
-                                <p className="font-bold text-slate-900 dark:text-white">Audit Fee</p>
-                                <p className="text-xs text-slate-500">Annual Estimate</p>
+                                <p className="font-bold text-slate-900 dark:text-white">{t('components.feeCalculator.audit.title')}</p>
+                                <p className="text-xs text-slate-500">{t('components.feeCalculator.audit.subtitle')}</p>
                             </div>
                             <div className="text-right">
                                 <p className="text-lg font-bold text-slate-900 dark:text-white">{formatCurrency(auditFee)}</p>
@@ -168,12 +169,12 @@ const FeeCalculator = () => {
                         </div>
                         {auditFee > 0 && (
                             <div className="flex justify-between items-center text-sm border-t border-dashed border-slate-200 dark:border-slate-600 pt-2 mt-2">
-                                <span className="text-slate-600 dark:text-slate-400">Professional Fee Surcharge</span>
+                                <span className="text-slate-600 dark:text-slate-400">{t('components.feeCalculator.audit.surcharge')}</span>
                                 <span className="font-medium text-slate-700 dark:text-slate-300">+{formatCurrency(auditProfFee)}</span>
                             </div>
                         )}
                         <div className="flex justify-between items-center text-sm font-bold text-slate-900 dark:text-white border-t border-slate-200 dark:border-slate-600 pt-2 mt-2">
-                            <span>Total Audit</span>
+                            <span>{t('components.feeCalculator.audit.total')}</span>
                             <span>{formatTotal(auditFee + auditProfFee)}</span>
                         </div>
                     </div>
@@ -182,8 +183,8 @@ const FeeCalculator = () => {
                     <div className="p-4 rounded-xl bg-slate-50 dark:bg-slate-700/50 border border-slate-100 dark:border-slate-700">
                         <div className="flex justify-between items-center mb-2">
                             <div>
-                                <p className="font-bold text-slate-900 dark:text-white">Tax Agent Fee</p>
-                                <p className="text-xs text-slate-500">Annual Estimate (Compliance)</p>
+                                <p className="font-bold text-slate-900 dark:text-white">{t('components.feeCalculator.tax.title')}</p>
+                                <p className="text-xs text-slate-500">{t('components.feeCalculator.tax.subtitle')}</p>
                             </div>
                             <div className="text-right">
                                 <p className="text-lg font-bold text-slate-900 dark:text-white">{formatCurrency(taxFee)}</p>
@@ -191,18 +192,18 @@ const FeeCalculator = () => {
                         </div>
                         {taxFee > 0 && (
                             <div className="flex justify-between items-center text-sm border-t border-dashed border-slate-200 dark:border-slate-600 pt-2 mt-2">
-                                <span className="text-slate-600 dark:text-slate-400">Professional Fee Surcharge</span>
+                                <span className="text-slate-600 dark:text-slate-400">{t('components.feeCalculator.tax.surcharge')}</span>
                                 <span className="font-medium text-slate-700 dark:text-slate-300">+{formatCurrency(taxProfFee)}</span>
                             </div>
                         )}
                         <div className="flex justify-between items-center text-sm font-bold text-slate-900 dark:text-white border-t border-slate-200 dark:border-slate-600 pt-2 mt-2">
-                            <span>Total Tax</span>
+                            <span>{t('components.feeCalculator.tax.total')}</span>
                             <span>{formatTotal(taxFee + taxProfFee)}</span>
                         </div>
                     </div>
 
                     <p className="text-xs text-center text-slate-400 mt-4">
-                        * Estimates exclude SST, disbursements, and complex issues. Final quote may vary.
+                        {t('components.feeCalculator.disclaimer')}
                     </p>
                 </div>
             </div>

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import * as contentful from 'contentful';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import { BLOCKS, Document } from '@contentful/rich-text-types';
@@ -24,6 +25,7 @@ type FormattedArticle = {
 }
 
 const BlogPostPage: React.FC = () => {
+    const { t } = useTranslation();
     const { slug } = useParams<{ slug: string }>();
     const [article, setArticle] = useState<FormattedArticle | null>(null);
     const [loading, setLoading] = useState(true);
@@ -39,7 +41,7 @@ const BlogPostPage: React.FC = () => {
                     return (
                         <figure className="my-8">
                             <img
-                                src={`https:${file.url}`}
+                                src={`https:${file.url} `}
                                 alt={description || ''}
                                 className="w-full h-auto rounded-lg shadow-md"
                                 width={file.details.image.width}
@@ -57,7 +59,7 @@ const BlogPostPage: React.FC = () => {
                 if (!entry || !entry.sys || !entry.fields) {
                     return null;
                 }
-                
+
                 // Check if the embedded entry is our 'Rich Image' component.
                 // Assuming the Content Type ID is 'componentRichImage' based on the component's name.
                 if (entry.sys.contentType.sys.id === 'componentRichImage') {
@@ -67,9 +69,9 @@ const BlogPostPage: React.FC = () => {
                     if (imageAsset && imageAsset.fields && imageAsset.fields.file) {
                         const { file } = imageAsset.fields;
                         return (
-                             <figure className="my-8">
+                            <figure className="my-8">
                                 <img
-                                    src={`https:${file.url}`}
+                                    src={`https:${file.url} `}
                                     alt={caption || imageAsset.fields.description || ''}
                                     className="w-full h-auto rounded-lg shadow-md"
                                     width={file.details.image.width}
@@ -108,10 +110,10 @@ const BlogPostPage: React.FC = () => {
                     const featuredImage = item.fields.featuredImage;
                     const imageUrl =
                         featuredImage &&
-                        'fields'in featuredImage &&
-                        featuredImage.fields.file?.url
-                        ? `https:${featuredImage.fields.file.url}`
-                        : `https://picsum.photos/seed/${item.sys.id}/1200/600`;
+                            'fields' in featuredImage &&
+                            featuredImage.fields.file?.url
+                            ? `https:${featuredImage.fields.file.url} `
+                            : `https://picsum.photos/seed/${item.sys.id}/1200/600`;
 
                     setArticle({
                         title: item.fields.title,
@@ -140,7 +142,7 @@ const BlogPostPage: React.FC = () => {
     if (loading) {
         return (
             <div className="container mx-auto max-w-3xl py-10 sm:py-16 px-4 sm:px-6 lg:px-8 text-center">
-                <p className="text-text-secondary-light dark:text-text-secondary-dark">Loading post...</p>
+                <p className="text-text-secondary-light dark:text-text-secondary-dark">{t('blogPost.loading')}</p>
             </div>
         );
     }
@@ -148,9 +150,9 @@ const BlogPostPage: React.FC = () => {
     if (error) {
         return (
             <div className="container mx-auto max-w-3xl py-10 sm:py-16 px-4 sm:px-6 lg:px-8 text-center">
-                 <div className="bg-red-100 dark:bg-red-900/30 rounded-lg p-4">
+                <div className="bg-red-100 dark:bg-red-900/30 rounded-lg p-4">
                     <p className="text-red-700 dark:text-red-300">{error}</p>
-                 </div>
+                </div>
             </div>
         );
     }
@@ -164,17 +166,17 @@ const BlogPostPage: React.FC = () => {
             <main>
                 <div className="mb-8">
                     <Link to="/blog" className="text-primary font-medium hover:underline flex items-center gap-1 w-fit">
-                       <span className="material-symbols-outlined">arrow_back</span>
-                       Back to Blog
+                        <span className="material-symbols-outlined">arrow_back</span>
+                        {t('blogPost.backToBlog')}
                     </Link>
                 </div>
                 <article>
                     <h1 className="text-3xl md:text-4xl font-black !mb-2 text-text-primary-light dark:text-text-primary-dark">{article.title}</h1>
                     <p className="text-text-secondary-light dark:text-text-secondary-dark text-base mb-6">{article.publishedDate}</p>
                     {article.imageUrl && <img src={article.imageUrl} alt={article.title} className="w-full rounded-xl my-8 aspect-video object-cover" />}
-                    
+
                     <div className="prose dark:prose-invert max-w-none prose-headings:text-text-primary-light dark:prose-headings:text-text-primary-dark prose-p:text-text-secondary-light dark:prose-p:text-text-secondary-dark prose-strong:text-text-primary-light dark:prose-strong:text-text-primary-dark prose-em:text-text-secondary-light dark:prose-em:text-text-secondary-dark prose-li:text-text-secondary-light dark:prose-li:text-text-secondary-dark prose-blockquote:text-text-secondary-light dark:prose-blockquote:text-text-secondary-dark">
-                      {article.content ? documentToReactComponents(article.content, options) : <p>This post has no content.</p>}
+                        {article.content ? documentToReactComponents(article.content, options) : <p>{t('blogPost.noContent')}</p>}
                     </div>
                 </article>
             </main>
