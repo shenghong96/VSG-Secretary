@@ -12,10 +12,12 @@ import SEO from '../components/SEO';
 type BlogPostSkeleton = contentful.EntrySkeletonType<{
     title: contentful.EntryFieldTypes.Text;
     slug: contentful.EntryFieldTypes.Text; // Added slug for unique URLs
+    subtitle?: contentful.EntryFieldTypes.Text; // Added subtitle for teaser
     description: contentful.EntryFieldTypes.Text;
     category?: contentful.EntryFieldTypes.Text; // Added category for filtering
     featuredImage?: contentful.EntryFieldTypes.AssetLink;
 }>;
+
 
 const BlogPage: React.FC = () => {
     const { t } = useTranslation(); // Added useTranslation hook
@@ -46,6 +48,7 @@ const BlogPage: React.FC = () => {
 
                     return {
                         title: item.fields.title,
+                        subtitle: item.fields.subtitle,
                         slug: item.fields.slug, // Map the slug field
                         description: item.fields.description,
                         category: item.fields.category || 'General', // Default category
@@ -156,7 +159,7 @@ const BlogPage: React.FC = () => {
                                                 <Link to={`/blog/${article.slug}`} className="block">
                                                     <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-3 group-hover:text-primary transition-colors leading-tight">{article.title}</h2>
                                                 </Link>
-                                                <p className="text-slate-600 dark:text-slate-400 leading-relaxed mb-4 line-clamp-3">{article.description}</p>
+                                                <p className="text-slate-600 dark:text-slate-400 leading-relaxed mb-4 line-clamp-3">{article.subtitle || article.description}</p>
                                                 <Link to={`/blog/${article.slug}`} className="inline-flex items-center gap-1 text-sm font-bold text-primary hover:underline">
                                                     {t('blogPage.readArticle')} <span className="material-symbols-outlined text-base">arrow_forward</span> {/* Use translation key */}
                                                 </Link>
