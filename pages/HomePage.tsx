@@ -156,14 +156,18 @@ const HomePage: React.FC = () => {
             </section>
 
             {/* CTA Section */}
-            <section className="relative overflow-hidden bg-slate-900 py-24 sm:py-32">
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,_var(--tw-gradient-stops))] from-primary/20 via-slate-900 to-slate-900"></div>
-                <div className="container relative mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
-                    <h2 className="text-4xl font-black tracking-tight text-white sm:text-5xl">{t('homePage.cta.title')}</h2>
-                    <p className="mx-auto mt-6 max-w-2xl text-xl text-slate-400">{t('homePage.cta.text')}</p>
-                    <Link to="/contact" className="mt-10 inline-flex items-center justify-center rounded-full bg-white px-8 py-4 text-base font-bold text-slate-900 shadow-lg transition-all hover:scale-105 hover:bg-slate-100">
-                        {t('homePage.cta.button')}
-                    </Link>
+            <section className="py-24 sm:py-32 bg-white dark:bg-slate-950">
+                <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="relative overflow-hidden rounded-3xl bg-slate-900 py-20 px-6 sm:px-16 shadow-2xl">
+                        <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,_var(--tw-gradient-stops))] from-primary/20 via-slate-900 to-slate-900"></div>
+                        <div className="relative mx-auto max-w-3xl text-center">
+                            <h2 className="text-3xl font-black tracking-tight text-white sm:text-4xl">{t('homePage.cta.title')}</h2>
+                            <p className="mx-auto mt-6 max-w-xl text-lg text-slate-300">{t('homePage.cta.text')}</p>
+                            <Link to="/contact" className="mt-10 inline-flex items-center justify-center rounded-full bg-white px-8 py-3 text-base font-bold text-slate-900 shadow-lg transition-all hover:scale-105 hover:bg-slate-50">
+                                {t('homePage.cta.button')}
+                            </Link>
+                        </div>
+                    </div>
                 </div>
             </section>
         </>
