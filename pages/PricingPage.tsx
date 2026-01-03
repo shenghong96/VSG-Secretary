@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
+import SEO from '../components/SEO';
+
 interface Service {
     name: string;
     price: string;
@@ -56,6 +58,11 @@ const PricingPage: React.FC = () => {
 
     return (
         <div className="min-h-screen bg-slate-50 dark:bg-slate-950 py-20 sm:py-32">
+            <SEO
+                title="Pricing & Packages"
+                description="Transparent pricing for company incorporation and secretarial services. No hidden fees."
+                canonical="https://www.vsg-secretary.com/pricing"
+            />
             <main className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center max-w-3xl mx-auto mb-20">
                     <span className="text-primary font-bold tracking-wide uppercase text-sm">{t('pricingPage.hero.badge')}</span>

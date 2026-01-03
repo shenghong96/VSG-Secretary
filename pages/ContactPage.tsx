@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
+import SEO from '../components/SEO';
+
 const ContactPage: React.FC = () => {
     const { t } = useTranslation();
     const [formData, setFormData] = useState({
@@ -28,8 +30,31 @@ const ContactPage: React.FC = () => {
         setFormData({ name: '', email: '', subject: '', message: '' });
     };
 
+    const localBusinessSchema = {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "VSG Secretary",
+        "image": "https://www.vsg-secretary.com/logo.png",
+        "telephone": "+60123456789", // Placeholder, replace with real if available
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Level 1, Some Building", // Placeholder
+            "addressLocality": "Kuala Lumpur",
+            "addressRegion": "Kuala Lumpur",
+            "postalCode": "50450",
+            "addressCountry": "MY"
+        },
+        "priceRange": "$$"
+    };
+
     return (
         <div className="min-h-screen bg-slate-50 dark:bg-slate-950 py-20 sm:py-32">
+            <SEO
+                title="Contact Us"
+                description="Get in touch with VSG Secretary for expert company incorporation and secretarial advice."
+                canonical="https://www.vsg-secretary.com/contact"
+                jsonLd={localBusinessSchema}
+            />
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
                 <div className="max-w-2xl mx-auto text-center mb-16">
                     <h1 className="text-4xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-5xl">

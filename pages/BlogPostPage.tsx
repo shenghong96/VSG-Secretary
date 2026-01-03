@@ -7,6 +7,8 @@ import { BLOCKS, Document } from '@contentful/rich-text-types';
 import contentfulClient from '../lib/contentfulClient';
 
 
+import SEO from '../components/SEO';
+
 // Defines the structure of our 'pageBlogPost' content type in Contentful.
 type BlogPostSkeleton = contentful.EntrySkeletonType<{
     title: contentful.EntryFieldTypes.Text;
@@ -19,9 +21,12 @@ type BlogPostSkeleton = contentful.EntrySkeletonType<{
 // Type for the formatted article data used in the component's state.
 type FormattedArticle = {
     title: string;
+    description?: string;
+    slug?: string;
     imageUrl: string;
     content: Document; // Use the specific Document type for rich text
     publishedDate: string;
+    isoDate: string; // ISO date for Schema
 }
 
 const BlogPostPage: React.FC = () => {
@@ -76,6 +81,7 @@ const BlogPostPage: React.FC = () => {
                                     className="w-full h-auto rounded-lg shadow-md"
                                     width={file.details.image.width}
                                     height={file.details.image.height}
+                                    loading="lazy"
                                 />
                                 {caption && <figcaption className="mt-2 text-center text-sm text-text-secondary-light dark:text-text-secondary-dark">{caption}</figcaption>}
                             </figure>
@@ -118,12 +124,15 @@ const BlogPostPage: React.FC = () => {
                     setArticle({
                         title: item.fields.title,
                         imageUrl: imageUrl,
+                        description: item.fields.description,
+                        slug: item.fields.slug,
                         content: item.fields.content as Document,
                         publishedDate: new Date(item.sys.createdAt).toLocaleDateString('en-US', {
                             year: 'numeric',
                             month: 'long',
                             day: 'numeric',
                         }),
+                        isoDate: item.sys.createdAt,
                     });
                 } else {
                     setError(`Blog post with slug "${slug}" not found.`);
@@ -161,8 +170,30 @@ const BlogPostPage: React.FC = () => {
         return null;
     }
 
+    const articleSchema = {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": article.title,
+        "description": article.description,
+        "image": article.imageUrl,
+        "datePublished": article.isoDate,
+        "author": {
+            "@type": "Organization",
+            "name": "VSG Secretary"
+        }
+    };
+
     return (
         <div className="container mx-auto max-w-3xl py-10 sm:py-16 px-4 sm:px-6 lg:px-8">
+            <SEO
+                title={article.title}
+                description={article.description}
+                openGraph={{
+                    type: 'article',
+                    image: article.imageUrl
+                }}
+                jsonLd={articleSchema}
+            />
             <main>
                 <div className="mb-8">
                     <Link to="/blog" className="text-primary font-medium hover:underline flex items-center gap-1 w-fit">

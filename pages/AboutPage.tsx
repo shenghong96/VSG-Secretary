@@ -3,11 +3,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
+import SEO from '../components/SEO';
+
 const TeamMember: React.FC<{ name: string; title: string; imgSrc: string; bio: string; }> = ({ name, title, imgSrc, bio }) => (
     <div className="flex flex-col items-center text-center p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 shadow-card transition-all hover:shadow-card-hover group hover:-translate-y-1">
         <div className="relative mb-6">
             <div className="absolute inset-0 rounded-full bg-gradient-to-r from-primary to-primary-hover opacity-20 blur-md group-hover:opacity-40 transition-opacity"></div>
-            <img className="relative size-32 rounded-full object-cover ring-4 ring-white dark:ring-slate-800" alt={`Headshot of ${name}`} src={imgSrc} />
+            <img className="relative size-32 rounded-full object-cover ring-4 ring-white dark:ring-slate-800" alt={`Headshot of ${name}`} src={imgSrc} loading="lazy" />
         </div>
         <h3 className="text-xl font-bold text-slate-900 dark:text-white">{name}</h3>
         <p className="text-primary font-bold mt-1">{title}</p>
@@ -33,6 +35,11 @@ const AboutPage: React.FC = () => {
 
     return (
         <div className="min-h-screen bg-slate-50 dark:bg-slate-950 py-20 sm:py-32">
+            <SEO
+                title="About Us"
+                description="Learn about our mission, values, and the experienced team behind VSG Secretary's corporate services."
+                canonical="https://www.vsg-secretary.com/about"
+            />
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
                 <main className="space-y-32">
                     <section className="text-center max-w-3xl mx-auto">

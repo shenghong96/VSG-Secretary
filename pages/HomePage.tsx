@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
+import SEO from '../components/SEO';
+
 interface Testimonial {
     quote: string;
     name: string;
@@ -30,7 +32,7 @@ const TestimonialCard: React.FC<{ quote: string; name: string; title: string; im
         </div>
         <p className="text-lg leading-relaxed text-slate-600 dark:text-slate-300">"{quote}"</p>
         <div className="mt-auto flex items-center gap-4">
-            <img src={imgSrc} alt={`Photo of ${name}`} className="size-12 rounded-full object-cover ring-2 ring-primary/20" />
+            <img src={imgSrc} alt={`Photo of ${name}`} className="size-12 rounded-full object-cover ring-2 ring-primary/20" loading="lazy" />
             <div>
                 <p className="font-bold text-slate-900 dark:text-white">{name}</p>
                 <p className="text-sm text-slate-500 dark:text-slate-400">{title}</p>
@@ -43,8 +45,25 @@ const HomePage: React.FC = () => {
     const { t } = useTranslation();
     const testimonials = t('homePage.testimonials.list', { returnObjects: true }) as Testimonial[];
 
+    const orgSchema = {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "VSG Secretary",
+        "url": "https://www.vsg-secretary.com",
+        "description": "Professional Corporate Secretarial Services & Company Incorporation in Malaysia.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "MY"
+        }
+    };
+
     return (
         <>
+            <SEO
+                title="Corporate Secretarial Services & Company Incorporation in Malaysia"
+                description="Your trusted partner for company incorporation, governance, and compliance in Malaysia. Start your Sdn Bhd today with VSG Secretary."
+                jsonLd={orgSchema}
+            />
             {/* Hero Section */}
             <section className="relative overflow-hidden bg-background-light pt-20 pb-32 dark:bg-slate-950 sm:pt-32 sm:pb-40">
                 <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-primary/20 via-transparent to-transparent opacity-50 dark:opacity-20"></div>

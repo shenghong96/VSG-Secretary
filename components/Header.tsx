@@ -49,10 +49,10 @@ const Header = ({ logoUrl }: { logoUrl: string | null }) => {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-white/70 backdrop-blur-md transition-all dark:border-border-dark/50 dark:bg-background-dark/70 supports-[backdrop-filter]:bg-white/60">
-      <div className="container mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto flex h-32 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <NavLink to="/home" className="flex items-center gap-2">
           {logoUrl ? (
-            <img src={logoUrl} alt="VSG Secretary Logo" className="h-9 w-auto" />
+            <img src={logoUrl} alt="VSG Secretary Logo" className="h-28 w-auto" />
           ) : (
             <>
               <div className="size-6 text-primary">
@@ -65,12 +65,12 @@ const Header = ({ logoUrl }: { logoUrl: string | null }) => {
           )}
         </NavLink>
 
-        <nav className="hidden items-center gap-8 md:flex">
+        <nav className="hidden items-center gap-10 md:flex">
           {navLinks.map((link) => (
             <NavLink
               key={link.path}
               to={link.path}
-              className={({ isActive }) => `${isActive ? activeLinkClass : inactiveLinkClass} text-sm font-medium transition-colors`}
+              className={({ isActive }) => `${isActive ? activeLinkClass : inactiveLinkClass} text-xl font-medium transition-colors`}
               end
             >
               {link.name}

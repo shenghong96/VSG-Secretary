@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
+import SEO from '../components/SEO';
+
 // Simple fix for lint errors - explicit type for component
 const FaqItem: React.FC<{ question: string; answer: string; isOpen: boolean; onClick: () => void }> = ({ question, answer, isOpen, onClick }) => (
     <div className="border border-slate-200 dark:border-slate-800 rounded-2xl bg-white dark:bg-slate-900 overflow-hidden transition-all duration-300 hover:shadow-md">
@@ -39,8 +41,27 @@ const FaqPage: React.FC = () => {
         ? faqData
         : faqData.filter(faq => faq.category === selectedCategory);
 
+    const faqSchema = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": faqData.map(faq => ({
+            "@type": "Question",
+            "name": faq.q,
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.a
+            }
+        }))
+    };
+
     return (
         <div className="min-h-screen bg-slate-50 dark:bg-slate-950 py-20 sm:py-32">
+            <SEO
+                title="Frequently Asked Questions"
+                description="Find answers to common questions about company incorporation, secretarial services, and compliance in Malaysia."
+                canonical="https://www.vsg-secretary.com/faq"
+                jsonLd={faqSchema}
+            />
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
                 <div className="text-center max-w-2xl mx-auto mb-16">
                     <span className="inline-block rounded-full bg-primary/10 px-4 py-1.5 text-sm font-bold text-primary mb-6">{t('faqPage.hero.badge')}</span>

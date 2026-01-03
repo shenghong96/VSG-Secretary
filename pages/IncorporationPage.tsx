@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import FeeCalculator from '../components/FeeCalculator';
+import SEO from '../components/SEO';
 
 interface Feature {
     title: string;
@@ -52,8 +53,27 @@ const IncorporationPage: React.FC = () => {
     const filteredFaqs = faqFilter === "All" ? safeFaqs : safeFaqs.filter(f => f.category === faqFilter);
     const categories = ["All", ...new Set(safeFaqs.map(f => f.category))];
 
+    const faqSchema = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": safeFaqs.map(faq => ({
+            "@type": "Question",
+            "name": faq.question,
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.answer
+            }
+        }))
+    };
+
     return (
         <div className="min-h-screen bg-slate-50 dark:bg-slate-950">
+            <SEO
+                title="Company Incorporation in Malaysia"
+                description="Fast and reliable Sdn Bhd company incorporation services. 100% online process available."
+                canonical="https://www.vsg-secretary.com/incorporation"
+                jsonLd={faqSchema}
+            />
             {/* Hero Section */}
             <section className="relative overflow-hidden pt-20 pb-32 lg:pt-32">
                 <div className="container mx-auto px-4 text-center">

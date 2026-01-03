@@ -6,6 +6,8 @@ import { useTranslation } from 'react-i18next';
 import * as contentful from 'contentful';
 import contentfulClient from '../lib/contentfulClient';
 
+import SEO from '../components/SEO';
+
 // Defines the structure of our 'pageBlogPost' content type in Contentful.
 type BlogPostSkeleton = contentful.EntrySkeletonType<{
     title: contentful.EntryFieldTypes.Text;
@@ -92,6 +94,11 @@ const BlogPage: React.FC = () => {
 
     return (
         <div className="min-h-screen bg-slate-50 dark:bg-slate-950 py-20 sm:py-32">
+            <SEO
+                title="Blog"
+                description="Insights, updates, and guides on Malaysian corporate law, company secretaryship, and business compliance."
+                canonical="https://www.vsg-secretary.com/blog"
+            />
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
                 <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
                     <div>

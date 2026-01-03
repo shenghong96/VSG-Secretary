@@ -9,7 +9,7 @@ const Footer: React.FC<{ logoUrl: string | null }> = ({ logoUrl }) => {
                     <div className="col-span-2 md:col-span-1">
                         <div className="flex items-center gap-2">
                             {logoUrl ? (
-                                <img src={logoUrl} alt="VSG Secretary Logo" className="h-10 w-auto" />
+                                <img src={logoUrl} alt="VSG Secretary Logo" className="h-28 w-auto" />
                             ) : (
                                 <>
                                     <div className="size-8 text-primary">

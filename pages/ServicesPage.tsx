@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
+import SEO from '../components/SEO';
+
 // FIX: Refactored to accept a 'content' prop instead of using 'children' to resolve typing errors.
 const ServiceCard: React.FC<{ icon: string; title: string; content: React.ReactNode }> = ({ icon, title, content }) => (
     <div className="flex flex-1 flex-col gap-6 rounded-2xl border border-slate-100 bg-white p-8 shadow-card transition-all hover:-translate-y-2 hover:shadow-card-hover dark:border-slate-800 dark:bg-slate-900 group">
@@ -24,6 +26,11 @@ const ServicesPage: React.FC = () => {
 
     return (
         <div className="min-h-screen bg-slate-50 dark:bg-slate-950 py-10 sm:py-20 px-4 sm:px-6">
+            <SEO
+                title="Our Services"
+                description="Comprehensive corporate secretarial, governance, and compliance services tailored for Malaysian businesses."
+                canonical="https://www.vsg-secretary.com/services"
+            />
             <main className="container mx-auto max-w-6xl flex flex-col gap-16">
                 <div className="text-center max-w-3xl mx-auto">
                     <span className="rounded-full bg-primary/10 px-4 py-2 text-sm font-bold text-primary">{t('servicesPage.hero.badge')}</span>
