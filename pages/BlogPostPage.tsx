@@ -210,6 +210,24 @@ const BlogPostPage: React.FC = () => {
                         {article.content ? documentToReactComponents(article.content, options) : <p>{t('blogPost.noContent')}</p>}
                     </div>
                 </article>
+
+                {/* CTA Section */}
+                <section className="py-16 sm:py-24 bg-white dark:bg-slate-950">
+                    <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+                        <div className="relative overflow-hidden rounded-3xl bg-slate-900 py-16 px-6 sm:px-12 shadow-2xl">
+                            <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,_var(--tw-gradient-stops))] from-primary/20 via-slate-900 to-slate-900"></div>
+                            <div className="relative mx-auto max-w-3xl text-center">
+                                <h2 className="text-3xl font-black tracking-tight text-white sm:text-4xl">Ready to Start Your Business?</h2>
+                                <p className="mx-auto mt-6 max-w-xl text-lg text-slate-300">
+                                    Let us handle the complexities of company incorporation and compliance while you focus on growth.
+                                </p>
+                                <Link to="/contact" className="mt-8 inline-flex items-center justify-center rounded-full bg-white px-8 py-3 text-base font-bold text-slate-900 shadow-lg transition-all hover:scale-105 hover:bg-slate-50">
+                                    Book a Free Consultation
+                                </Link>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </main>
         </div>
     );
